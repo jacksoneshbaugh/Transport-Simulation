@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=WarehouseTest
+comment0.text=\n\ Classe-test\ WarehouseTest.\n\n\ @author\ Jackson\ Eshbaugh\n\ @version\ 05/01/2024\n
+comment1.params=
+comment1.target=WarehouseTest()
+comment2.params=
+comment2.target=void\ testDock()
+comment2.text=\n\ Tests\ the\ {@link\ Warehouse\#Dock\#dock(Truck)}\ method.\ Ensures\ that\ {@code\ false}\ is\ returned\ if\ dock\ is\n\ already\ full,\ otherwise\ {@code\ true}.\n
+comment3.params=
+comment3.target=void\ testRemove()
+comment3.text=\n\ Tests\ the\ {@link\ Warehouse\#Dock\#remove()}\ method.\ Ensures\ that\ the\ dock\ is\ no\ longer\ occuped\ after\n\ a\ truck\ is\ removed\ from\ the\ dock.\n
+comment4.params=
+comment4.target=void\ testHandle()
+comment4.text=\n\ Tests\ the\ {@link\ Warehouse\#Dock\#handle()}\ method,\ using\ four\ scenarios\ with\ different\ outcomes\ when\n\ calling\ the\ method.\n
+comment5.params=
+comment5.target=void\ testAction()
+comment5.text=\n\ Tests\ the\ {@link\ Warehouse\#action()}\ method,\ using\ multiple\ scenarios\ to\ test\ the\ different\ possible\n\ outcomes/functionalities\ of\ the\ method.\n
+numComments=6

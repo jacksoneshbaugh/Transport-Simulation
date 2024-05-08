@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=MyQueueTest
+comment0.text=\n\ Test\ class\ for\ {@link\ MyQueue}.\n
+comment1.params=
+comment1.target=void\ setUp()
+comment2.params=
+comment2.target=void\ testIsEmpty()
+comment2.text=\n\ Tests\ the\ {@link\ MyQueue\#isEmpty()}\ method.\n
+comment3.params=
+comment3.target=void\ testSizeOnNewQueue()
+comment3.text=\n\ Tests\ the\ size\ of\ the\ queue\ is\ zero\ when\ the\ queue\ is\ newly\ created.\n
+comment4.params=
+comment4.target=void\ testAdd()
+comment4.text=\n\ Tests\ the\ addition\ of\ elements\ and\ subsequent\ size\ increase.\n
+comment5.params=
+comment5.target=void\ testPeek()
+comment5.text=\n\ Tests\ the\ {@link\ MyQueue\#peek()}\ method,\ testing\ that\ peeking\ the\ next\ element\ does\ not\ remove\ it.\n
+comment6.params=
+comment6.target=void\ testPoll()
+comment6.text=\n\ Tests\ the\ {@link\ MyQueue\#poll()}\ method,\ ensuring\ polling\ removes\ and\ returns\ the\n\ first\ element,\ or\ returns\ null\ if\ the\ queue\ is\ empty.\n
+comment7.params=
+comment7.target=void\ testRemove()
+comment7.text=\n\ Tests\ the\ {@link\ MyQueue\#remove()}\ method\ to\ see\ if\ it\ throws\ an\ exception\ when\n\ empty\ and\ behaves\ like\ poll\ otherwise.\n
+comment8.params=
+comment8.target=void\ fullTest()
+comment8.text=\n\ Tests\ multiple\ operations\ to\ verify\ correct\ behavior\ of\ the\ queue\ under\ various\ conditions.\n
+numComments=9

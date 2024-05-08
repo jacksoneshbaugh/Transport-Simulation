@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Manifest
+comment0.text=\n\ A\ representation\ of\ the\ manifest\ of\ a\ truck\ in\ the\ simulation.\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 04/29/2024\n
+comment1.params=
+comment1.target=Manifest()
+comment1.text=\n\ Creates\ a\ new\ manifest.\n
+comment2.params=shipment
+comment2.target=void\ add(Shipment)
+comment2.text=\n\ Adds\ a\ shipment\ to\ the\ manifest.\n\ \n\ @param\ shipment\ the\ shipment\ to\ add\ to\ the\ manifest\n
+comment3.params=position
+comment3.target=Shipment\ pickUp(Point)
+comment3.text=\n\ Called\ when\ a\ truck\ picks\ up\ a\ shipment.\ Removes\ the\ shipment\ from\ the\ manifest.\n\ \n\ @param\ position\ the\ current\ position\ of\ the\ truck\n\ @return\ the\ picked\ up\ shipment\n
+comment4.params=position
+comment4.target=Shipment\ nextPickUp(Point)
+comment4.text=\n\ Gets\ the\ next\ shipment\ the\ truck\ should\ pick\ up,\ given\ the\ truck's\ {@code\ position}.\n\ \n\ @param\ position\ the\ position\ of\ the\ truck\n\ @return\ the\ next\ shipment\ the\ truck\ should\ pick\ up\n
+comment5.params=position
+comment5.target=int\ nextPickUpIndex(Point)
+comment5.text=\n\ Gets\ the\ index\ of\ the\ next\ shipment\ the\ truck\ should\ pick\ up,\ given\ the\ truck's\ {@code\ position}.\n\ \n\ @param\ position\ the\ position\ of\ the\ truck\n\ @return\ the\ index\ of\ the\ next\ shipment\ the\ truck\ should\ pick\ up\n
+comment6.params=
+comment6.target=int\ size()
+comment6.text=\n\ Returns\ the\ number\ of\ shipments\ currently\ in\ the\ manifest.\n\ \n\ @return\ the\ size\ of\ the\ manifest\n
+numComments=7

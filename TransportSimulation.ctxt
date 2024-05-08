@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=TransportSimulation
+comment0.text=\n\ This\ class\ controls\ a\ simulation\ of\ trucks\ delivering\ and\ picking\ up\ shipments\ from\ warehouses.\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 05/04/2024\n
+comment1.params=maxX\ maxY\ numTrucks\ numWarehouses\ minShipments\ maxShipments
+comment1.target=TransportSimulation(int,\ int,\ int,\ int,\ int,\ int)
+comment1.text=\n\ Creates\ a\ new\ TransportSimulation,\ randomly\ generating\ trucks,\ warehouses,\ and\ shipments.\n\ \n\ @param\ maxX\ the\ maximum\ x\ that\ the\ simulation\ extends\ to\n\ @param\ maxY\ the\ maximum\ y\ that\ the\ simulation\ extends\ to\n\ @param\ numTrucks\ the\ number\ of\ trucks\ in\ the\ simulation\n\ @param\ numWarehouses\ the\ number\ of\ warehouses\ in\ the\ simulation\n\ @param\ numShipments\ the\ number\ of\ shipments\ per\ truck\n
+comment2.params=maxX\ maxY
+comment2.target=TransportSimulation(int,\ int)
+comment2.text=\n\ Creates\ a\ new\ TransportSimulation,\ allowing\ the\ manual\ addition\ of\ trucks\ &\ warehouses.\n\ \n\ @param\ maxX\ the\ maximum\ x\ that\ the\ simulation\ extends\ to\n\ @param\ maxY\ the\ maximum\ y\ that\ the\ simulation\ extends\ to\n
+comment3.params=truck
+comment3.target=void\ addTruck(Truck)
+comment3.text=\n\ Adds\ a\ truck\ to\ the\ simulation.\ Before\ adding,\ trucks\ should\ have\ their\ manifests\ assigned.\n\ \n\ @param\ truck\ the\ truck\ to\ add\ to\ the\ simulation\n
+comment4.params=warehouse
+comment4.target=void\ addWarehouse(Warehouse)
+comment4.text=\n\ Adds\ a\ warehouse\ to\ the\ simulation.\n\ \n\ @param\ warehouse\ the\ warehouse\ to\ add\ to\ the\ simulation\n
+comment5.params=hours
+comment5.target=void\ run(int)
+comment5.text=\n\ Runs\ the\ simulation\ for\ a\ given\ number\ of\ hours.\n\ \n\ @param\ hours\ the\ number\ of\ hours\ to\ run\ the\ simulation\ for\n
+numComments=6

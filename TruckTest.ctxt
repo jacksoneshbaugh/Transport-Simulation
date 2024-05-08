@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=TruckTest
+comment0.text=\n\ Test\ class\ for\ {@link\ Truck}.\n\n\ @author\ Jackson\ Eshbaugh\n\ @version\ 05/03/2024\n
+comment1.params=
+comment1.target=TruckTest()
+comment1.text=\n\ Constructeur\ de\ la\ classe-test\ TruckTest\n
+comment2.params=
+comment2.target=void\ testLoad()
+comment2.text=\n\ Tests\ the\ {@link\ Truck\#load(Shipment)}\ method.\n\ \n\ Loads\ shipments\ into\ a\ Truck,\ then\ ensures\ that\ all\ shipments\ were\ loaded\ correctly.\ Also\ verifies\ that\n\ {@link\ TruckFullException}\ is\ thrown\ for\ any\ load\ that\ would\ go\ over\ the\ space\ constraints\ of\ the\ truck.\n
+comment3.params=
+comment3.target=void\ testUnload()
+comment3.text=\n\ Tests\ the\ {@link\ Truck\#unload()}\ method.\n\ \n\ Unloads\ shipments\ from\ a\ truck,\ ensuring\ that\ the\ correct\ shipments\ are\ unloaded.\ Also\ verifies\ that\n\ {@link\ TruckEmptyException}\ is\ thrown\ when\ trying\ to\ unload\ an\ empty\ truck.\n
+comment4.params=
+comment4.target=void\ testSetDestination()
+comment4.text=\n\ Tests\ the\ {@link\ Truck\#setDestination()}\ method.\n\ \n\ Sets\ up\ four\ scenarios,\ one\ where\ pickup\ is\ closer,\ one\ where\ dropoff\ is\ closer,\ and\ two\ where\n\ both\ are\ equidistant.\ Ensures\ that\ the\ destination\ of\ the\ truck\ is\ set\ accurately.\n
+comment5.params=
+comment5.target=void\ testMove()
+comment5.text=\n\ Tests\ the\ {@link\ Truck\#move()}\ method.\n\ \n\ Using\ four\ different\ scenarios\ with\ varying\ expected\ outcomes,\ test\ that\ a\ truck\ always\ moves\n\ toward\ its\ destination,\ doesn't\ overshoot\ its\ destination,\ and\ takes\ the\ fastest\ route\ to\ the\ destination.\n
+comment6.params=
+comment6.target=void\ testAction()
+comment6.text=\n\ Tests\ the\ {@link\ Truck\#action()}\ method.\n\ Uses\ a\ sample\ scenario\ over\ two\ simulation\ hours\ where\ a\ truck\ arrives\ at\ the\ warehouse,\ then\n\ joins\ the\ queue.\n
+numComments=7

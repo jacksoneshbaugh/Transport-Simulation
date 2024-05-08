@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ManifestTest
+comment0.text=\n\ Classe-test\ ManifestTest.\n\n\ @author\ Jackson\ Eshbaugh\n\ @version\ 05/01/2024\n
+comment1.params=
+comment1.target=void\ testAdd()
+comment1.text=\n\ Tests\ the\ {@link\ Manifest\#add(Shipment)}.\n\ Creates\ a\ manifest\ and\ adds\ shipments,\ ensuring\ that\ {@link\ Manifest\#size()}\ is\ correct.\n
+comment2.params=
+comment2.target=void\ testNextPickUp()
+comment2.text=\n\ Tests\ the\ {@link\ Manifest\#nextPickUp(Point)}.\n\ Creates\ a\ manifest\ and\ adds\ shipments,\ ensuring\ that\ {@link\ Manifest\#size()}\ is\ correct.\ Then,\ calls\n\ {@code\ nextPickUp()}\ and\ ensures\ that\ the\ closest\ shipment\ to\ the\ given\ point\ is\ returned.\n
+comment3.params=
+comment3.target=void\ testPickUp()
+comment3.text=\n\ Tests\ the\ {@link\ Manifest\#pickUp(Point)}.\n\ Creates\ a\ manifest\ and\ adds\ shipments,\ ensuring\ that\ {@link\ Manifest\#size()}\ is\ correct.\ Then,\ calls\n\ {@code\ pickUp()}\ and\ ensures\ that\ the\ closest\ shipment\ to\ the\ given\ point\ is\ returned,\ and\ that\ the\ size\n\ is\ decremented.\n
+numComments=4

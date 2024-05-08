@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Shipment
+comment0.text=\n\ Models\ a\ shipment\ in\ the\ simulation.\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 04/29/2024\n
+comment1.params=id\ origin\ destination\ size
+comment1.target=Shipment(int,\ Warehouse,\ Warehouse,\ int)
+comment1.text=\n\ Creates\ a\ new\ shipment\ with\ the\ given\ {@code\ id},\ {@code\ origin},\ {@code\ destination},\ and\ {@code\ size}.\n\ \n\ @param\ id\ the\ shipment\ id\n\ @param\ origin\ the\ origin\ warehouse\ of\ the\ shipment\n\ @param\ destination\ the\ destination\ warehouse\ of\ the\ shipment\n\ @param\ size\ how\ large\ (1-3\ units)\ the\ shipment\ is\n
+comment2.params=
+comment2.target=int\ getId()
+comment2.text=\n\ Gets\ the\ shipment's\ ID.\n\ \n\ @return\ the\ shipment's\ ID\n
+comment3.params=
+comment3.target=int\ getSize()
+comment3.text=\n\ Gets\ the\ shipment's\ size.\n\ \n\ @return\ the\ shipment's\ size\n
+comment4.params=
+comment4.target=Warehouse\ getOrigin()
+comment4.text=\n\ Gets\ the\ shipment's\ origin\ warehouse.\n\ \n\ @return\ the\ shipment's\ origin\n
+comment5.params=
+comment5.target=Warehouse\ getDestination()
+comment5.text=\n\ Gets\ the\ shipment's\ destination\ warehouse.\n\ \n\ @return\ the\ shipment's\ destination\n
+comment6.params=point
+comment6.target=int\ distanceToOrigin(Point)
+comment6.text=\n\ Gets\ the\ distance\ from\ the\ shipment's\ origin\ to\ the\ given\ position.\n\ \n\ @param\ position\ the\ position\ to\ measure\ the\ distance\ to\n\ @return\ the\ integer\ distance\ between\ the\ shipment's\ origin\ and\ the\ given\ position\n
+comment7.params=point
+comment7.target=int\ distanceToDestination(Point)
+comment7.text=\n\ Gets\ the\ distance\ from\ the\ shipment's\ destination\ to\ the\ given\ position.\n\ \n\ @param\ position\ the\ position\ to\ measure\ the\ distance\ to\n\ @return\ the\ integer\ distance\ between\ the\ shipment's\ origin\ and\ the\ given\ position\n
+numComments=8

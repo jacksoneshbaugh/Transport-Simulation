@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Main
+comment0.text=\n\ Entry\ point\ for\ the\ Transport\ Simulation.\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 05/04/2024\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ Entry-point\ for\ the\ simulation.\ Takes\ a\ command\ line\ argument\ to\ determine\ wether\ to\ randomize\ the\n\ config\ before\ starting\ the\ simulation.\n\ \n\ @param\ args\ if\ {@code\ args[0]\ \=\=\ "random"},\ then\ the\ simulation's\ configuration\ file\ will\ be\ randomized\n\ before\ starting.\n
+numComments=2

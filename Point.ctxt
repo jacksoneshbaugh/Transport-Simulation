@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Point
+comment0.text=\n\ Represents\ a\ point\ on\ the\ 2D\ simulation\ grid.\n\ \n\ @author\ Jackson\ Eshbaugh\n\ @version\ 04/29/2024\n
+comment1.params=x\ y
+comment1.target=Point(int,\ int)
+comment1.text=\n\ Creates\ a\ new\ point\ at\ position\ ({@code\ x},\ {@code\ y}).\n\ \n\ @param\ x\ the\ x-coordinate\n\ @param\ y\ the\ y-coordinate\n
+comment2.params=point
+comment2.target=int\ distanceTo(Point)
+comment2.text=\n\ Calculates\ the\ distance\ from\ this\ point\ to\ the\ given\ {@code\ point}.\n\ \n\ @param\ point\ the\ point\ to\ calcuate\ the\ distance\ to\ from\ here\n\ @return\ the\ integer\ distance\ between\ these\ two\ points\n
+comment3.params=o
+comment3.target=boolean\ equals(java.lang.Object)
+numComments=4

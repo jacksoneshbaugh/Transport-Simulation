@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ShipmentTest
+comment0.text=\n\ Classe-test\ ShipmentTest.\n\n\ @author\ \ Jackson\ Eshbaugh\n\ @version\ 05/04/2024\n
+comment1.params=
+comment1.target=ShipmentTest()
+comment2.params=
+comment2.target=void\ testDistanceToOrigin()
+comment2.text=\n\ Tests\ the\ {@link\ Shipment\#distanceToOrigin(Point)}\ method\ against\ pre-calculated\ distances.\n
+comment3.params=
+comment3.target=void\ testDistanceToDestination()
+comment3.text=\n\ Tests\ the\ {@link\ Shipment\#distanceToDestination(Point)}\ method\ against\ pre-calculated\ distances.\n
+numComments=4
