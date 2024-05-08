@@ -1,0 +1,2731 @@
+%PDF-1.3
+1 0 obj
+<< /Type /Catalog
+/Outlines 2 0 R
+/Pages 3 0 R >>
+endobj
+2 0 obj
+<< /Type /Outlines /Count 0 >>
+endobj
+3 0 obj
+<< /Type /Pages
+/Kids [6 0 R
+11 0 R
+13 0 R
+15 0 R
+17 0 R
+19 0 R
+21 0 R
+23 0 R
+25 0 R
+27 0 R
+29 0 R
+31 0 R
+33 0 R
+35 0 R
+]
+/Count 14
+/Resources <<
+/ProcSet 4 0 R
+/Font << 
+/F1 8 0 R
+/F2 9 0 R
+/F3 10 0 R
+>>
+>>
+/MediaBox [0.000 0.000 595.280 841.890]
+ >>
+endobj
+4 0 obj
+[/PDF /Text ]
+endobj
+5 0 obj
+<<
+/Creator (DOMPDF)
+/CreationDate (D:20240419133624+00'00')
+/ModDate (D:20240419133624+00'00')
+>>
+endobj
+6 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<<
+/Length 5411 >>
+stream
+
+0.000 0.000 0.000 rg
+BT 34.016 784.469 Td /F1 12.0 Tf  [(Jackson Eshbaugh)] TJ ET
+BT 34.016 758.213 Td /F1 12.0 Tf  [(April 19, 2024)] TJ ET
+BT 34.016 731.957 Td /F1 12.0 Tf  [(CS 150: Data Structures and Algorithms)] TJ ET
+BT 34.016 705.701 Td /F1 12.0 Tf  [(Professor John Dahl)] TJ ET
+BT 34.016 663.961 Td /F2 24.0 Tf  [(Project 3: )] TJ ET
+BT 140.624 663.961 Td /F2 24.0 Tf  [(Transport Simulation)] TJ ET
+0.000 0.000 0.000 RG
+1.2 w 0 J [  ] 0 d
+140.624 658.561 m 363.992 658.561 l S
+BT 34.016 625.071 Td /F2 18.0 Tf  [(I. Class Representations)] TJ ET
+BT 34.016 594.449 Td /F2 12.0 Tf  [(Schedule)] TJ ET
+BT 80.024 594.449 Td /F1 12.0 Tf  [(. Firstly, there will be a schedule interface that allows for all parts of this simulation to be run on a )] TJ ET
+BT 34.016 580.193 Td /F1 12.0 Tf  [(“schedule.”)] TJ ET
+BT 34.016 555.382 Td /F3 12.0 Tf  [(public interface Schedule {)] TJ ET
+BT 34.016 542.932 Td /F3 12.0 Tf  [(    // Called every hour.)] TJ ET
+BT 34.016 530.482 Td /F3 12.0 Tf  [(    void action\(\);)] TJ ET
+BT 34.016 518.031 Td /F3 12.0 Tf  [(    // Stores the object’s current information into a log file.)] TJ ET
+BT 34.016 505.581 Td /F3 12.0 Tf  [(    void log\(\);)] TJ ET
+BT 34.016 493.131 Td /F3 12.0 Tf  [(})] TJ ET
+BT 34.016 467.236 Td /F2 12.0 Tf  [(Point)] TJ ET
+BT 61.352 467.236 Td /F1 12.0 Tf  [(. This class will represent a point on a 2D grid. It will have an )] TJ ET
+BT 360.980 467.236 Td /F1 12.0 Tf  [(x)] TJ ET
+0.6 w 0 J [  ] 0 d
+360.980 464.536 m 366.980 464.536 l S
+BT 366.980 467.236 Td /F1 12.0 Tf  [( and )] TJ ET
+BT 390.308 467.236 Td /F1 12.0 Tf  [(y)] TJ ET
+0.6 w 0 J [  ] 0 d
+390.308 464.536 m 396.308 464.536 l S
+BT 396.308 467.236 Td /F1 12.0 Tf  [( coordinate.)] TJ ET
+BT 34.016 442.425 Td /F3 12.0 Tf  [(public class Point {)] TJ ET
+BT 34.016 429.974 Td /F3 12.0 Tf  [(  private int x, y;)] TJ ET
+BT 34.016 417.524 Td /F3 12.0 Tf  [(  // Creates a new point at position \(x, y\).)] TJ ET
+BT 34.016 405.074 Td /F3 12.0 Tf  [(  public Point\(int x, int y\) {...})] TJ ET
+BT 34.016 392.624 Td /F3 12.0 Tf  [(  // Returns the point's x-coordinate.)] TJ ET
+BT 34.016 380.173 Td /F3 12.0 Tf  [(  public int getX\(\) {...})] TJ ET
+BT 34.016 367.723 Td /F3 12.0 Tf  [(  // Returns the point's y-coordinate.)] TJ ET
+BT 34.016 355.273 Td /F3 12.0 Tf  [(  public int getY\(\) {...})] TJ ET
+BT 34.016 342.823 Td /F3 12.0 Tf  [(  // Returns the distance from this point to the given point.)] TJ ET
+BT 34.016 330.372 Td /F3 12.0 Tf  [(  public int distanceTo\(Point point\) {...})] TJ ET
+BT 34.016 317.922 Td /F3 12.0 Tf  [(})] TJ ET
+BT 34.016 292.027 Td /F2 12.0 Tf  [(Truck)] TJ ET
+BT 66.020 292.027 Td /F1 12.0 Tf  [(. Trucks will have an )] TJ ET
+BT 170.000 292.027 Td /F1 12.0 Tf  [(id)] TJ ET
+0.6 w 0 J [  ] 0 d
+170.000 289.327 m 179.336 289.327 l S
+BT 179.336 292.027 Td /F1 12.0 Tf  [(, a )] TJ ET
+BT 193.664 292.027 Td /F1 12.0 Tf  [(position)] TJ ET
+0.6 w 0 J [  ] 0 d
+193.664 289.327 m 232.340 289.327 l S
+BT 232.340 292.027 Td /F1 12.0 Tf  [( point, )] TJ ET
+BT 266.012 292.027 Td /F1 12.0 Tf  [(load limit)] TJ ET
+0.6 w 0 J [  ] 0 d
+266.012 289.327 m 312.356 289.327 l S
+BT 312.356 292.027 Td /F1 12.0 Tf  [(, )] TJ ET
+BT 318.356 292.027 Td /F1 12.0 Tf  [(speed)] TJ ET
+0.6 w 0 J [  ] 0 d
+318.356 289.327 m 345.680 289.327 l S
+BT 345.680 292.027 Td /F1 12.0 Tf  [( \(which is determined by the load limit\), )] TJ ET
+BT 34.016 277.771 Td /F1 12.0 Tf  [(and a \(cargo\) )] TJ ET
+BT 100.316 277.771 Td /F1 12.0 Tf  [(hold)] TJ ET
+0.6 w 0 J [  ] 0 d
+100.316 275.071 m 121.652 275.071 l S
+BT 121.652 277.771 Td /F1 12.0 Tf  [( \(which is essentially a stack\), also with a )] TJ ET
+BT 323.624 277.771 Td /F1 12.0 Tf  [(manifest)] TJ ET
+0.6 w 0 J [  ] 0 d
+323.624 275.071 m 364.952 275.071 l S
+BT 364.952 277.771 Td /F1 12.0 Tf  [(.)] TJ ET
+BT 34.016 252.960 Td /F3 12.0 Tf  [(public class Truck implements Schedule {)] TJ ET
+BT 34.016 240.510 Td /F3 12.0 Tf  [(  private Point position;)] TJ ET
+BT 34.016 228.059 Td /F3 12.0 Tf  [(  private int id, loadLimit, speed;)] TJ ET
+BT 34.016 215.609 Td /F3 12.0 Tf  [(  private Stack<Shipment> hold;)] TJ ET
+BT 34.016 203.159 Td /F3 12.0 Tf  [(  private Manifest manifest;)] TJ ET
+BT 34.016 190.709 Td /F3 12.0 Tf  [(  private Warehouse destination;)] TJ ET
+BT 34.016 178.259 Td /F3 12.0 Tf  [(  // Creates a new truck with loadLimit at position \(x, y\), setting speed based on loadLimit.)] TJ ET
+BT 34.016 165.808 Td /F3 12.0 Tf  [(  public Truck\(int id, Point point, int loadLimit\) {...})] TJ ET
+BT 34.016 153.358 Td /F3 12.0 Tf  [(  // Get the truck's id.)] TJ ET
+BT 34.016 140.908 Td /F3 12.0 Tf  [(  public int getId\(\) {...})] TJ ET
+BT 34.016 128.458 Td /F3 12.0 Tf  [(  // Set the truck's manifest.)] TJ ET
+BT 34.016 116.007 Td /F3 12.0 Tf  [(  public void setManifest\(Manifest manifest\) {...})] TJ ET
+BT 34.016 103.557 Td /F3 12.0 Tf  [(  // Returns the truck's manifest.)] TJ ET
+BT 34.016 91.107 Td /F3 12.0 Tf  [(  public Manifest getManifest\(\) {...})] TJ ET
+BT 34.016 78.657 Td /F3 12.0 Tf  [(  // Loads a shipment onto the truck. Throws a TruckFullException if the truck is full.)] TJ ET
+BT 34.016 66.206 Td /F3 12.0 Tf  [(  public void load\(Shipment shipment\) {...})] TJ ET
+BT 34.016 53.756 Td /F3 12.0 Tf  [(  // Offloads the last loaded shipment from the truck. Throws TruckEmptyException if the truck is empty.)] TJ ET
+BT 34.016 41.306 Td /F3 12.0 Tf  [(  public Shipment unload\(\) {...})] TJ ET
+endstream
+endobj
+8 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+>>
+endobj
+9 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /Times-Bold
+/Encoding /WinAnsiEncoding
+>>
+endobj
+10 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F3
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+>>
+endobj
+11 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 12 0 R
+>>
+endobj
+12 0 obj
+<<
+/Length 6051 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+BT 34.016 797.914 Td /F3 12.0 Tf  [(  // Sets the truck's destination. See algorithm below.)] TJ ET
+BT 34.016 785.464 Td /F3 12.0 Tf  [(  // Would be private, but is public for testing purposes.)] TJ ET
+BT 34.016 773.014 Td /F3 12.0 Tf  [(  public void setDestination\(\) {...})] TJ ET
+BT 34.016 760.563 Td /F3 12.0 Tf  [(  // Sets the truck's position.)] TJ ET
+BT 34.016 748.113 Td /F3 12.0 Tf  [(  public void setPosition\(Point position\) {...})] TJ ET
+BT 34.016 735.663 Td /F3 12.0 Tf  [(  // Required methods from the Schedule interface:)] TJ ET
+BT 34.016 723.213 Td /F3 12.0 Tf  [(  @Override)] TJ ET
+BT 34.016 710.762 Td /F3 12.0 Tf  [(  public void action\(\) {...})] TJ ET
+BT 34.016 698.312 Td /F3 12.0 Tf  [(  @Override)] TJ ET
+BT 34.016 685.862 Td /F3 12.0 Tf  [(  public void log\(\) {...})] TJ ET
+BT 34.016 673.412 Td /F3 12.0 Tf  [(})] TJ ET
+BT 34.016 647.517 Td /F2 12.0 Tf  [(Warehouse)] TJ ET
+BT 92.012 647.517 Td /F1 12.0 Tf  [(. Warehouses will have an )] TJ ET
+BT 221.312 647.517 Td /F1 12.0 Tf  [(id)] TJ ET
+0.6 w 0 J [  ] 0 d
+221.312 644.817 m 230.648 644.817 l S
+BT 230.648 647.517 Td /F1 12.0 Tf  [(, a )] TJ ET
+BT 244.976 647.517 Td /F1 12.0 Tf  [(position)] TJ ET
+0.6 w 0 J [  ] 0 d
+244.976 644.817 m 283.652 644.817 l S
+BT 283.652 647.517 Td /F1 12.0 Tf  [( point, and a certain number \(between 1–3\) of loading )] TJ ET
+BT 34.016 633.261 Td /F1 12.0 Tf  [(docks)] TJ ET
+0.6 w 0 J [  ] 0 d
+34.016 630.561 m 62.012 630.561 l S
+BT 62.012 633.261 Td /F1 12.0 Tf  [(. The docks will have a boolean value to determine if they are )] TJ ET
+BT 361.280 633.261 Td /F1 12.0 Tf  [(occupied)] TJ ET
+0.6 w 0 J [  ] 0 d
+361.280 630.561 m 404.600 630.561 l S
+BT 404.600 633.261 Td /F1 12.0 Tf  [( and a )] TJ ET
+BT 436.256 633.261 Td /F1 12.0 Tf  [(truck)] TJ ET
+0.6 w 0 J [  ] 0 d
+436.256 630.561 m 460.916 630.561 l S
+BT 460.916 633.261 Td /F1 12.0 Tf  [( object to represent )] TJ ET
+BT 34.016 619.005 Td /F1 12.0 Tf  [(the truck currently at the dock. Also, if all docks are occupied, any trucks that arrive at the warehouse will )] TJ ET
+BT 34.016 604.749 Td /F1 12.0 Tf  [(have to wait until a dock is available. These trucks will be stored in a )] TJ ET
+BT 368.636 604.749 Td /F1 12.0 Tf  [(truckQueue)] TJ ET
+0.6 w 0 J [  ] 0 d
+368.636 602.049 m 424.616 602.049 l S
+BT 424.616 604.749 Td /F1 12.0 Tf  [(.)] TJ ET
+BT 34.016 578.493 Td /F2 12.0 Tf  [(Note)] TJ ET
+BT 58.004 578.493 Td /F1 12.0 Tf  [(: Once a shipment has reached its destination, it will be removed from the truck and not added to the )] TJ ET
+BT 34.016 564.237 Td /F1 12.0 Tf  [(destination warehouse. Additionally, shipments aren't actually removed from the warehouse; they are )] TJ ET
+BT 34.016 549.981 Td /F1 12.0 Tf  [(actually loaded in the truck from the manifest.)] TJ ET
+BT 34.016 525.169 Td /F3 12.0 Tf  [(public class Warehouse {)] TJ ET
+BT 34.016 512.719 Td /F3 12.0 Tf  [(  private Point position;)] TJ ET
+BT 34.016 500.269 Td /F3 12.0 Tf  [(  private int id;)] TJ ET
+BT 34.016 487.819 Td /F3 12.0 Tf  [(  private List<Dock> docks;)] TJ ET
+BT 34.016 475.368 Td /F3 12.0 Tf  [(  private Queue<Truck> truckQueue;)] TJ ET
+BT 34.016 462.918 Td /F3 12.0 Tf  [(  // Creates a new warehouse at the position given by point with the given number of docks.)] TJ ET
+BT 34.016 450.468 Td /F3 12.0 Tf  [(  public Warehouse\(int id, Point point, int docks\) {...})] TJ ET
+BT 34.016 438.018 Td /F3 12.0 Tf  [(  // Returns the warehouse's id.)] TJ ET
+BT 34.016 425.567 Td /F3 12.0 Tf  [(  public int getId\(\) {...})] TJ ET
+BT 34.016 413.117 Td /F3 12.0 Tf  [(  // Join the queue of trucks waiting for a dock.)] TJ ET
+BT 34.016 400.667 Td /F3 12.0 Tf  [(  public void joinQueue\(Truck truck\) {...})] TJ ET
+BT 34.016 388.217 Td /F3 12.0 Tf  [(  // Returns the number of docks at the warehouse.)] TJ ET
+BT 34.016 375.767 Td /F3 12.0 Tf  [(  public int getNumDocks\(\) {...})] TJ ET
+BT 34.016 363.316 Td /F3 12.0 Tf  [(  // Returns the number of docks with a truck at the warehouse.)] TJ ET
+BT 34.016 350.866 Td /F3 12.0 Tf  [(  public int getNumOccupiedDocks\(\) {...})] TJ ET
+BT 34.016 338.416 Td /F3 12.0 Tf  [(  // Returns the warehouse's position.)] TJ ET
+BT 34.016 325.966 Td /F3 12.0 Tf  [(  public Point getPosition\(\) {...})] TJ ET
+BT 34.016 313.515 Td /F3 12.0 Tf  [(  // Returns the number of trucks in the queue.)] TJ ET
+BT 34.016 301.065 Td /F3 12.0 Tf  [(  public int getNumQueuingTrucks\(\) {...})] TJ ET
+BT 34.016 288.615 Td /F3 12.0 Tf  [(  // Required methods from the Schedule interface:)] TJ ET
+BT 34.016 276.165 Td /F3 12.0 Tf  [(  @Override)] TJ ET
+BT 34.016 263.714 Td /F3 12.0 Tf  [(  public void action\(\) {...})] TJ ET
+BT 34.016 251.264 Td /F3 12.0 Tf  [(  @Override)] TJ ET
+BT 34.016 238.814 Td /F3 12.0 Tf  [(  public void log\(\) {...})] TJ ET
+BT 34.016 226.364 Td /F3 12.0 Tf  [(  private class Dock {)] TJ ET
+BT 34.016 213.913 Td /F3 12.0 Tf  [(    private boolean occupied;)] TJ ET
+BT 34.016 201.463 Td /F3 12.0 Tf  [(    private Truck truck;)] TJ ET
+BT 34.016 189.013 Td /F3 12.0 Tf  [(    // Creates a new dock.)] TJ ET
+BT 34.016 176.563 Td /F3 12.0 Tf  [(    public Dock\(\) {...})] TJ ET
+BT 34.016 164.112 Td /F3 12.0 Tf  [(    // Assigns a truck to the dock.)] TJ ET
+BT 34.016 151.662 Td /F3 12.0 Tf  [(    public void dock\(Truck truck\) {...})] TJ ET
+BT 34.016 139.212 Td /F3 12.0 Tf  [(    // Removes the truck from the dock.)] TJ ET
+BT 34.016 126.762 Td /F3 12.0 Tf  [(    public void remove\(\) {...})] TJ ET
+BT 34.016 114.311 Td /F3 12.0 Tf  [(    // Handles the dock \(to be called by action\(\)\))] TJ ET
+BT 34.016 101.861 Td /F3 12.0 Tf  [(    public void handle\(\) {...})] TJ ET
+BT 34.016 89.411 Td /F3 12.0 Tf  [(    // Returns whether the dock is occupied.)] TJ ET
+BT 34.016 76.961 Td /F3 12.0 Tf  [(    public boolean isOccupied\(\) {...})] TJ ET
+BT 34.016 64.511 Td /F3 12.0 Tf  [(    // Returns the truck at the dock.)] TJ ET
+BT 34.016 52.060 Td /F3 12.0 Tf  [(    public Truck getTruck\(\) {...})] TJ ET
+BT 34.016 39.610 Td /F3 12.0 Tf  [(  })] TJ ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 14 0 R
+>>
+endobj
+14 0 obj
+<<
+/Length 7339 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+BT 34.016 797.914 Td /F3 12.0 Tf  [(})] TJ ET
+BT 34.016 772.019 Td /F2 12.0 Tf  [(Manifest)] TJ ET
+BT 79.340 772.019 Td /F1 12.0 Tf  [(. The manifest is a list of shipments that are to be delivered. This is implemented as some type of )] TJ ET
+BT 34.016 757.763 Td /F1 12.0 Tf  [(List \(probably an ArrayList\). The manifest will have a )] TJ ET
+BT 297.968 757.763 Td /F1 12.0 Tf  [(pickUps)] TJ ET
+0.6 w 0 J [  ] 0 d
+297.968 755.063 m 337.964 755.063 l S
+BT 337.964 757.763 Td /F1 12.0 Tf  [( list of shipments that are to be picked up. )] TJ ET
+BT 34.016 743.507 Td /F1 12.0 Tf  [(The manifest will also have a )] TJ ET
+BT 177.992 743.507 Td /F3 12.0 Tf  [(nextPickup\(\))] TJ ET
+BT 264.392 743.507 Td /F1 12.0 Tf  [( method that will return the next shipment to be picked up, )] TJ ET
+BT 34.016 729.251 Td /F1 12.0 Tf  [(and a)] TJ ET
+BT 59.672 729.251 Td /F3 12.0 Tf  [(pickUp\(\))] TJ ET
+BT 117.272 729.251 Td /F1 12.0 Tf  [( method that will remove the next shipment from the list of shipments to be picked up.)] TJ ET
+BT 34.016 704.440 Td /F3 12.0 Tf  [(public class Manifest {)] TJ ET
+BT 34.016 691.990 Td /F3 12.0 Tf  [(  private List<Shipment> pickUps;)] TJ ET
+BT 34.016 679.539 Td /F3 12.0 Tf  [(  // Creates a new manifest.)] TJ ET
+BT 34.016 667.089 Td /F3 12.0 Tf  [(  public Manifest\(\) {...})] TJ ET
+BT 34.016 654.639 Td /F3 12.0 Tf  [(  // Adds a shipment to the manifest.)] TJ ET
+BT 34.016 642.189 Td /F3 12.0 Tf  [(  public void add\(Shipment shipment\) {...})] TJ ET
+BT 34.016 629.738 Td /F3 12.0 Tf  [(  // Called when a truck picks up a shipment. Removes the shipment from the manifest, and returns it.)] TJ ET
+BT 34.016 617.288 Td /F3 12.0 Tf  [(  public Shipment pickUp\(Position position\) {...})] TJ ET
+BT 34.016 604.838 Td /F3 12.0 Tf  [(  // Returns the next shipment in the manifest.)] TJ ET
+BT 34.016 592.388 Td /F3 12.0 Tf  [(  public Shipment nextPickup\(Position position\) {...})] TJ ET
+BT 34.016 579.937 Td /F3 12.0 Tf  [(  // Returns the number of shipments in the manifest.)] TJ ET
+BT 34.016 567.487 Td /F3 12.0 Tf  [(  public int size\(\) {...})] TJ ET
+BT 34.016 555.037 Td /F3 12.0 Tf  [(})] TJ ET
+BT 34.016 529.142 Td /F2 12.0 Tf  [(Shipment)] TJ ET
+BT 83.360 529.142 Td /F1 12.0 Tf  [(. Shipments will have an )] TJ ET
+BT 204.692 529.142 Td /F1 12.0 Tf  [(id)] TJ ET
+0.6 w 0 J [  ] 0 d
+204.692 526.442 m 214.028 526.442 l S
+BT 214.028 529.142 Td /F1 12.0 Tf  [( \(increments from 0\), a )] TJ ET
+BT 327.332 529.142 Td /F1 12.0 Tf  [(destination)] TJ ET
+0.6 w 0 J [  ] 0 d
+327.332 526.442 m 380.000 526.442 l S
+BT 380.000 529.142 Td /F1 12.0 Tf  [( Warehouse, an )] TJ ET
+BT 457.304 529.142 Td /F1 12.0 Tf  [(origin)] TJ ET
+0.6 w 0 J [  ] 0 d
+457.304 526.442 m 485.972 526.442 l S
+BT 485.972 529.142 Td /F1 12.0 Tf  [( Warehouse, )] TJ ET
+BT 34.016 514.886 Td /F1 12.0 Tf  [(and a )] TJ ET
+BT 62.672 514.886 Td /F1 12.0 Tf  [(size)] TJ ET
+0.6 w 0 J [  ] 0 d
+62.672 512.186 m 81.332 512.186 l S
+BT 81.332 514.886 Td /F1 12.0 Tf  [( \(which is between 1–3 units\).)] TJ ET
+BT 34.016 490.075 Td /F3 12.0 Tf  [(public class Shipment {)] TJ ET
+BT 34.016 477.624 Td /F3 12.0 Tf  [(  private int id, size;)] TJ ET
+BT 34.016 465.174 Td /F3 12.0 Tf  [(  private Warehouse origin, destination;)] TJ ET
+BT 34.016 452.724 Td /F3 12.0 Tf  [(  // Creates a new shipment with the given id, destination, and size.)] TJ ET
+BT 34.016 440.274 Td /F3 12.0 Tf  [(  public Shipment\(int id, Warehouse origin, Warehouse destination, int size\) {...})] TJ ET
+BT 34.016 427.823 Td /F3 12.0 Tf  [(  // Returns the shipment's id.)] TJ ET
+BT 34.016 415.373 Td /F3 12.0 Tf  [(  public int getId\(\) {...})] TJ ET
+BT 34.016 402.923 Td /F3 12.0 Tf  [(  // Returns the shipment's size.)] TJ ET
+BT 34.016 390.473 Td /F3 12.0 Tf  [(  public int getSize\(\) {...})] TJ ET
+BT 34.016 378.023 Td /F3 12.0 Tf  [(  // Returns the shipment's origin.)] TJ ET
+BT 34.016 365.572 Td /F3 12.0 Tf  [(  public Warehouse getOrigin\(\) {...})] TJ ET
+BT 34.016 353.122 Td /F3 12.0 Tf  [(  // Returns the shipment's destination.)] TJ ET
+BT 34.016 340.672 Td /F3 12.0 Tf  [(  public Warehouse getDestination\(\) {...})] TJ ET
+BT 34.016 328.222 Td /F3 12.0 Tf  [(  // Returns the distance from the shipment's origin to the given position.)] TJ ET
+BT 34.016 315.771 Td /F3 12.0 Tf  [(  public int distanceTo\(Point point\) {...})] TJ ET
+BT 34.016 303.321 Td /F3 12.0 Tf  [(})] TJ ET
+BT 34.016 277.426 Td /F2 12.0 Tf  [(TransportSimulation)] TJ ET
+BT 142.700 277.426 Td /F1 12.0 Tf  [(. This is the main class that will run the simulation. It will have a )] TJ ET
+BT 457.028 277.426 Td /F1 12.0 Tf  [(time)] TJ ET
+0.6 w 0 J [  ] 0 d
+457.028 274.726 m 478.364 274.726 l S
+BT 478.364 277.426 Td /F1 12.0 Tf  [( variable to keep )] TJ ET
+BT 34.016 263.170 Td /F1 12.0 Tf  [(track of the current time. Additionally, it will have a )] TJ ET
+BT 287.984 263.170 Td /F1 12.0 Tf  [(maxX)] TJ ET
+0.6 w 0 J [  ] 0 d
+287.984 260.470 m 317.312 260.470 l S
+BT 317.312 263.170 Td /F1 12.0 Tf  [( and )] TJ ET
+BT 340.640 263.170 Td /F1 12.0 Tf  [(maxY)] TJ ET
+0.6 w 0 J [  ] 0 d
+340.640 260.470 m 369.968 260.470 l S
+BT 369.968 263.170 Td /F1 12.0 Tf  [( to represent the size of the grid, and a )] TJ ET
+BT 34.016 248.914 Td /F1 12.0 Tf  [(number of )] TJ ET
+BT 86.672 248.914 Td /F1 12.0 Tf  [(trucks)] TJ ET
+0.6 w 0 J [  ] 0 d
+86.672 246.214 m 116.000 246.214 l S
+BT 116.000 248.914 Td /F1 12.0 Tf  [(, )] TJ ET
+BT 122.000 248.914 Td /F1 12.0 Tf  [(shipments)] TJ ET
+0.6 w 0 J [  ] 0 d
+122.000 246.214 m 170.672 246.214 l S
+BT 170.672 248.914 Td /F1 12.0 Tf  [( \(per truck\) and )] TJ ET
+BT 247.976 248.914 Td /F1 12.0 Tf  [(warehouses)] TJ ET
+0.6 w 0 J [  ] 0 d
+247.976 246.214 m 303.956 246.214 l S
+BT 303.956 248.914 Td /F1 12.0 Tf  [( to be used in the simulation.)] TJ ET
+BT 34.016 224.103 Td /F3 12.0 Tf  [(public class TransportSimulation {)] TJ ET
+BT 34.016 211.653 Td /F3 12.0 Tf  [(  private int time;)] TJ ET
+BT 34.016 199.202 Td /F3 12.0 Tf  [(  private int maxX, maxY;)] TJ ET
+BT 34.016 186.752 Td /F3 12.0 Tf  [(  private int numTrucks, numWarehouses, numShipments;)] TJ ET
+BT 34.016 174.302 Td /F3 12.0 Tf  [(  private List<Truck> trucks;)] TJ ET
+BT 34.016 161.852 Td /F3 12.0 Tf  [(  private List<Warehouse> warehouses;)] TJ ET
+BT 34.016 149.401 Td /F3 12.0 Tf  [(  // Creates a new transport simulation.)] TJ ET
+BT 34.016 136.951 Td /F3 12.0 Tf  [(  // Sets up the simulation with the given number of trucks, warehouses, and shipments.)] TJ ET
+BT 34.016 124.501 Td /F3 12.0 Tf  [(  public TransportSimulation\(int maxX, int maxY, int numTrucks, int numWarehouses, int numShipments\) {...})] TJ ET
+BT 34.016 112.051 Td /F3 12.0 Tf  [(  // Alternatively, create an empty simulation and add trucks, warehouses, and shipments later.)] TJ ET
+BT 34.016 99.600 Td /F3 12.0 Tf  [(  public TransportSimulation\(int maxX, int maxY\) {...})] TJ ET
+BT 34.016 87.150 Td /F3 12.0 Tf  [(  // Adds a truck to the simulation.)] TJ ET
+BT 34.016 74.700 Td /F3 12.0 Tf  [(  // Before adding, a truck should be assigned a manifest.)] TJ ET
+BT 34.016 62.250 Td /F3 12.0 Tf  [(  public void addTruck\(Truck truck\) {...})] TJ ET
+BT 34.016 49.799 Td /F3 12.0 Tf  [(  // Adds a warehouse to the simulation.)] TJ ET
+BT 34.016 37.349 Td /F3 12.0 Tf  [(  public void addWarehouse\(Warehouse warehouse\) {...})] TJ ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 16 0 R
+>>
+endobj
+16 0 obj
+<<
+/Length 5485 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+BT 34.016 797.914 Td /F3 12.0 Tf  [(  // Runs the simulation for a given number of hours.)] TJ ET
+BT 34.016 785.464 Td /F3 12.0 Tf  [(  public void run\(int hours\) {...})] TJ ET
+BT 34.016 773.014 Td /F3 12.0 Tf  [(})] TJ ET
+34.016 758.524 m 561.264 758.524 l 560.514 757.774 l 34.766 757.774 l  f
+0.160 0.160 0.160 rg
+0.160 0.160 0.160 RG
+34.016 757.024 m 561.264 757.024 l 560.514 757.774 l 34.766 757.774 l  f
+561.264 758.524 m 561.264 757.024 l 560.514 757.774 l 560.514 757.774 l  f
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+34.016 758.524 m 34.016 757.024 l 34.766 757.774 l 34.766 757.774 l  f
+BT 34.016 724.976 Td /F2 18.0 Tf  [(II. Algorithms)] TJ ET
+BT 34.016 694.355 Td /F2 12.0 Tf  [(Truck)] TJ ET
+BT 66.020 694.355 Td /F1 12.0 Tf  [(. Trucks have 4 actions to take during an hour of simulation:)] TJ ET
+BT 48.816 668.104 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 668.099 Td /F1 12.0 Tf  [(Moving towards a destination.)] TJ ET
+BT 48.816 653.848 Td /F1 12.0 Tf  [(2.)] TJ ET
+BT 64.016 653.843 Td /F1 12.0 Tf  [(Picking up a shipment from a warehouse. \(Next hour, the truck will undock and move towards the )] TJ ET
+BT 64.016 639.587 Td /F1 12.0 Tf  [(next destination, or drop off another shipment, or load a new shipment.\))] TJ ET
+BT 48.816 625.336 Td /F1 12.0 Tf  [(3.)] TJ ET
+BT 64.016 625.331 Td /F1 12.0 Tf  [(Dropping off a shipment at a warehouse. \(Same as above.\))] TJ ET
+BT 48.816 611.080 Td /F1 12.0 Tf  [(4.)] TJ ET
+BT 64.016 611.075 Td /F1 12.0 Tf  [(Waiting at a warehouse.)] TJ ET
+BT 34.016 584.819 Td /F1 12.0 Tf  [(Picking up and dropping off shipments will both be handled by the )] TJ ET
+BT 358.004 584.819 Td /F2 12.0 Tf  [(Warehouse)] TJ ET
+BT 416.000 584.819 Td /F1 12.0 Tf  [( class.)] TJ ET
+BT 34.016 558.563 Td /F1 12.0 Tf  [(So, the )] TJ ET
+BT 70.352 558.563 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 127.952 558.563 Td /F1 12.0 Tf  [( method will check the current state of the truck and perform the appropriate action. The )] TJ ET
+BT 34.016 544.307 Td /F3 12.0 Tf  [(log\(\))] TJ ET
+BT 70.016 544.307 Td /F1 12.0 Tf  [( method will print the current state of the truck.)] TJ ET
+BT 34.016 519.495 Td /F3 12.0 Tf  [(action\(\):)] TJ ET
+BT 34.016 507.045 Td /F3 12.0 Tf  [(  // truck should keep moving towards destination.)] TJ ET
+BT 34.016 494.595 Td /F3 12.0 Tf  [(  if destination is not null:)] TJ ET
+BT 34.016 482.145 Td /F3 12.0 Tf  [(    action = "\(" + truck.getPoint\(\).getX\(\) + ", " + truck.getPoint\(\).getY\(\) + "\) -> " // set the other part of this log in the move\(\) method)] TJ ET
+BT 34.016 469.694 Td /F3 12.0 Tf  [(    move\(destination.getPoint\(\).getX\(\), destination.getPoint\(\).getY\(\)\))] TJ ET
+BT 34.016 457.244 Td /F3 12.0 Tf  [(    log\(\))] TJ ET
+BT 34.016 444.794 Td /F3 12.0 Tf  [(  if at destination:)] TJ ET
+BT 34.016 432.344 Td /F3 12.0 Tf  [(    join the queue of trucks waiting for a dock)] TJ ET
+BT 34.016 407.893 Td /F3 12.0 Tf  [(move\(x, y\):)] TJ ET
+BT 34.016 395.443 Td /F3 12.0 Tf  [(  // move towards the destination)] TJ ET
+BT 34.016 382.993 Td /F3 12.0 Tf  [(  // Use similar triangles to calculate the new position, based on the truck's speed.)] TJ ET
+BT 34.016 370.543 Td /F3 12.0 Tf  [(  destinationDistance = truck.getPoint\(\).distanceTo\(x, y\))] TJ ET
+BT 34.016 358.092 Td /F3 12.0 Tf  [(  if destinationDistance <= truck.getSpeed\(\):)] TJ ET
+BT 34.016 345.642 Td /F3 12.0 Tf  [(    truck.setPoint\(x, y\))] TJ ET
+BT 34.016 333.192 Td /F3 12.0 Tf  [(    action = action + "\(" + x + ", " + y + "\)")] TJ ET
+BT 34.016 320.742 Td /F3 12.0 Tf  [(  else:)] TJ ET
+BT 34.016 308.291 Td /F3 12.0 Tf  [(    // calculate the new position based on the truck's speed)] TJ ET
+BT 34.016 295.841 Td /F3 12.0 Tf  [(    ratio = truck.getSpeed\(\) / destinationDistance)] TJ ET
+BT 34.016 283.391 Td /F3 12.0 Tf  [(    \(int\) newX = ceil\(truck.getPoint\(\).getX\(\) + \(x - truck.getPoint\(\).getX\(\)\) * ratio\))] TJ ET
+BT 34.016 270.941 Td /F3 12.0 Tf  [(    \(int\) newY = ceil\(truck.getPoint\(\).getY\(\) + \(y - truck.getPoint\(\).getY\(\)\) * ratio\))] TJ ET
+BT 34.016 258.491 Td /F3 12.0 Tf  [(    setPoint\(newX, newY\))] TJ ET
+BT 34.016 246.040 Td /F3 12.0 Tf  [(    action = action + "\(" + newX + ", " + newY + "\)")] TJ ET
+BT 34.016 221.590 Td /F3 12.0 Tf  [(setPoint\(x, y\):)] TJ ET
+BT 34.016 209.140 Td /F3 12.0 Tf  [(  this.point = new Point\(x, y\))] TJ ET
+BT 34.016 184.690 Td /F3 12.0 Tf  [(log\(\):)] TJ ET
+BT 34.016 172.239 Td /F3 12.0 Tf  [(  print "Truck %id%: %insert type of action here% [Destination: \(%x%, %y%\); Cargo Hold: \(%current hold size%/%max hold size%\)]" // replacing placeholders with actual values)] TJ ET
+BT 34.016 146.344 Td /F1 12.0 Tf  [(Additionally, the truck needs to set its destination to the next shipment in the manifest, or to the next )] TJ ET
+BT 34.016 132.088 Td /F1 12.0 Tf  [(dropoff, whichever is closer. Again, with any ties, the newer shipment will be given priority.)] TJ ET
+BT 34.016 107.277 Td /F3 12.0 Tf  [(setDestination\(\):)] TJ ET
+BT 34.016 94.827 Td /F3 12.0 Tf  [(  nextPickup = manifest.nextPickup\(\))] TJ ET
+BT 34.016 82.377 Td /F3 12.0 Tf  [(  nextDropoff = hold.peek\(\))] TJ ET
+BT 34.016 69.926 Td /F3 12.0 Tf  [(  if nextPickup is null:)] TJ ET
+BT 34.016 57.476 Td /F3 12.0 Tf  [(    destination = nextDropoff)] TJ ET
+BT 34.016 45.026 Td /F3 12.0 Tf  [(    manifest.remove\(\))] TJ ET
+BT 34.016 32.576 Td /F3 12.0 Tf  [(  else if nextDropoff is null:)] TJ ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 18 0 R
+>>
+endobj
+18 0 obj
+<<
+/Length 6148 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+BT 34.016 797.914 Td /F3 12.0 Tf  [(    destination = nextPickup)] TJ ET
+BT 34.016 785.464 Td /F3 12.0 Tf  [(  else if nextPickup.distanceTo\(truck.getPoint\(\)\) < nextDropoff.distanceTo\(truck.getPoint\(\)\):)] TJ ET
+BT 34.016 773.014 Td /F3 12.0 Tf  [(    destination = nextPickup)] TJ ET
+BT 34.016 760.563 Td /F3 12.0 Tf  [(  else if nextPickup.distanceTo\(truck.getPoint\(\)\) > nextDropoff.distanceTo\(truck.getPoint\(\)\):)] TJ ET
+BT 34.016 748.113 Td /F3 12.0 Tf  [(    destination = nextDropoff)] TJ ET
+BT 34.016 735.663 Td /F3 12.0 Tf  [(  else:)] TJ ET
+BT 34.016 723.213 Td /F3 12.0 Tf  [(    // if distances are equal, newer shipment is given priority)] TJ ET
+BT 34.016 710.762 Td /F3 12.0 Tf  [(    if nextPickup.id < nextDropoff.id:)] TJ ET
+BT 34.016 698.312 Td /F3 12.0 Tf  [(      destination = nextPickup)] TJ ET
+BT 34.016 685.862 Td /F3 12.0 Tf  [(    else:)] TJ ET
+BT 34.016 673.412 Td /F3 12.0 Tf  [(      destination = nextDropoff)] TJ ET
+BT 34.016 647.517 Td /F2 12.0 Tf  [(Warehouse)] TJ ET
+BT 92.012 647.517 Td /F1 12.0 Tf  [(. Warehouses will have a )] TJ ET
+BT 215.312 647.517 Td /F3 12.0 Tf  [(load\(\))] TJ ET
+BT 258.512 647.517 Td /F1 12.0 Tf  [( method that will load a shipment onto a truck. If all docks are )] TJ ET
+BT 34.016 633.261 Td /F1 12.0 Tf  [(occupied, the truck will be added to the )] TJ ET
+BT 226.316 633.261 Td /F3 12.0 Tf  [(truckQueue)] TJ ET
+BT 298.316 633.261 Td /F1 12.0 Tf  [(. The )] TJ ET
+BT 325.976 633.261 Td /F3 12.0 Tf  [(unload\(\))] TJ ET
+BT 383.576 633.261 Td /F1 12.0 Tf  [( method will remove a shipment )] TJ ET
+BT 34.016 619.005 Td /F1 12.0 Tf  [(from the truck and update the dock status. The )] TJ ET
+BT 259.976 619.005 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 317.576 619.005 Td /F1 12.0 Tf  [( method will check the status of the docks and )] TJ ET
+BT 34.016 604.749 Td /F1 12.0 Tf  [(trucks and perform the appropriate action.)] TJ ET
+BT 34.016 579.937 Td /F3 12.0 Tf  [(action\(\):)] TJ ET
+BT 34.016 567.487 Td /F3 12.0 Tf  [(  for each dock:)] TJ ET
+BT 34.016 555.037 Td /F3 12.0 Tf  [(    dock.handle\(\))] TJ ET
+BT 34.016 542.587 Td /F3 12.0 Tf  [(    else:)] TJ ET
+BT 34.016 530.136 Td /F3 12.0 Tf  [(      // Dock is empty)] TJ ET
+BT 34.016 517.686 Td /F3 12.0 Tf  [(      if !truckQueue.isEmpty\(\):)] TJ ET
+BT 34.016 505.236 Td /F3 12.0 Tf  [(        assign truckQueue.next\(\) to dock)] TJ ET
+BT 34.016 480.786 Td /F3 12.0 Tf  [(log\(\):)] TJ ET
+BT 34.016 468.335 Td /F3 12.0 Tf  [(  print "Warehouse %id%: " + action)] TJ ET
+BT 34.016 442.441 Td /F2 12.0 Tf  [(Dock)] TJ ET
+BT 60.680 442.441 Td /F1 12.0 Tf  [(. Docks will have an )] TJ ET
+BT 161.996 442.441 Td /F3 12.0 Tf  [(dock\(\))] TJ ET
+BT 205.196 442.441 Td /F1 12.0 Tf  [( method that will dock a truck at the dock and a )] TJ ET
+BT 436.496 442.441 Td /F3 12.0 Tf  [(remove\(\))] TJ ET
+BT 494.096 442.441 Td /F1 12.0 Tf  [( method that )] TJ ET
+BT 34.016 428.185 Td /F1 12.0 Tf  [(will remove the truck from the dock. The )] TJ ET
+BT 234.980 428.185 Td /F3 12.0 Tf  [(isOccupied\(\))] TJ ET
+BT 321.380 428.185 Td /F1 12.0 Tf  [( method will return whether the dock is )] TJ ET
+BT 34.016 413.929 Td /F1 12.0 Tf  [(occupied, and the )] TJ ET
+BT 121.328 413.929 Td /F3 12.0 Tf  [(getTruck\(\))] TJ ET
+BT 193.328 413.929 Td /F1 12.0 Tf  [( method will return the truck at the dock.)] TJ ET
+BT 34.016 389.117 Td /F3 12.0 Tf  [(handle\(\):)] TJ ET
+BT 34.016 376.667 Td /F3 12.0 Tf  [(  if isOccupied\(\):)] TJ ET
+BT 34.016 364.217 Td /F3 12.0 Tf  [(    if truck needs to unload:)] TJ ET
+BT 34.016 351.767 Td /F3 12.0 Tf  [(      Shipment s = truck.unload\(\))] TJ ET
+BT 34.016 339.316 Td /F3 12.0 Tf  [(      action = "truck " + truck.getId\(\) + " unloaded shipment " + s.getId\(\) // ... add the rest of the log message as shown below in section III)] TJ ET
+BT 34.016 326.866 Td /F3 12.0 Tf  [(      log\(\))] TJ ET
+BT 34.016 314.416 Td /F3 12.0 Tf  [(    else if truck needs to load:)] TJ ET
+BT 34.016 301.966 Td /F3 12.0 Tf  [(      Shipment s = truck.getManifest\(\).pickUp\(\))] TJ ET
+BT 34.016 289.515 Td /F3 12.0 Tf  [(      action = "truck " + truck.getId\(\) + " loaded shipment " + s.getId\(\) // ... add the rest of the log message as shown below in section III)] TJ ET
+BT 34.016 277.065 Td /F3 12.0 Tf  [(      truck.load\(\))] TJ ET
+BT 34.016 264.615 Td /F3 12.0 Tf  [(      log\(\))] TJ ET
+BT 34.016 252.165 Td /F3 12.0 Tf  [(    else:)] TJ ET
+BT 34.016 239.714 Td /F3 12.0 Tf  [(      // Truck is done with its business at the warehouse.)] TJ ET
+BT 34.016 227.264 Td /F3 12.0 Tf  [(      truck.setDestination\(\))] TJ ET
+BT 34.016 214.814 Td /F3 12.0 Tf  [(      remove\(\))] TJ ET
+BT 34.016 188.919 Td /F2 12.0 Tf  [(Manifest)] TJ ET
+BT 79.340 188.919 Td /F1 12.0 Tf  [(. The manifest will keep track of all shipments and their priorities. It will have a )] TJ ET
+BT 465.956 188.919 Td /F3 12.0 Tf  [(nextPickup\(\))] TJ ET
+BT 34.016 174.663 Td /F1 12.0 Tf  [(method that will return the shipment with the highest priority. The manifest will also have an )] TJ ET
+BT 483.656 174.663 Td /F3 12.0 Tf  [(add\(\))] TJ ET
+BT 34.016 160.407 Td /F1 12.0 Tf  [(method that will add a shipment to the manifest and a )] TJ ET
+BT 294.332 160.407 Td /F3 12.0 Tf  [(pickUp\(\))] TJ ET
+BT 351.932 160.407 Td /F1 12.0 Tf  [( method that will remove a shipment from )] TJ ET
+BT 34.016 146.151 Td /F1 12.0 Tf  [(the manifest.)] TJ ET
+BT 34.016 119.895 Td /F1 12.0 Tf  [(Determining Priority)] TJ ET
+0.6 w 0 J [  ] 0 d
+34.016 117.195 m 134.348 117.195 l S
+BT 134.348 119.895 Td /F1 12.0 Tf  [(. The priority of a shipment is determined by the distance from the truck to the )] TJ ET
+BT 34.016 105.639 Td /F1 12.0 Tf  [(shipment. If two or more distances are equal, a newer shipment is given priority over an older one.)] TJ ET
+BT 34.016 80.828 Td /F3 12.0 Tf  [(nextPickup\(\):)] TJ ET
+BT 34.016 68.377 Td /F3 12.0 Tf  [(  Shipment next = null)] TJ ET
+BT 34.016 55.927 Td /F3 12.0 Tf  [(  for each shipment in pickUps:)] TJ ET
+BT 34.016 43.477 Td /F3 12.0 Tf  [(    if next is null:)] TJ ET
+BT 34.016 31.027 Td /F3 12.0 Tf  [(      next = shipment)] TJ ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 20 0 R
+>>
+endobj
+20 0 obj
+<<
+/Length 5584 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+BT 34.016 797.914 Td /F3 12.0 Tf  [(    else if shipment.priority > next.priority:)] TJ ET
+BT 34.016 785.464 Td /F3 12.0 Tf  [(      next = shipment)] TJ ET
+BT 34.016 773.014 Td /F3 12.0 Tf  [(    else if shipment.priority == next.priority:)] TJ ET
+BT 34.016 760.563 Td /F3 12.0 Tf  [(      if shipment.id > next.id:)] TJ ET
+BT 34.016 748.113 Td /F3 12.0 Tf  [(        next = shipment)] TJ ET
+BT 34.016 735.663 Td /F3 12.0 Tf  [(  return next)] TJ ET
+BT 34.016 711.213 Td /F3 12.0 Tf  [(add\(shipment\):)] TJ ET
+BT 34.016 698.762 Td /F3 12.0 Tf  [(  pickUps.add\(shipment\))] TJ ET
+BT 34.016 674.312 Td /F3 12.0 Tf  [(pickUp\(\):)] TJ ET
+BT 34.016 661.862 Td /F3 12.0 Tf  [(  Shipment next = pickUps.remove\(nextPickup\(\)\))] TJ ET
+BT 34.016 649.412 Td /F3 12.0 Tf  [(  truck.load\(next\))] TJ ET
+BT 34.016 623.517 Td /F2 12.0 Tf  [(Shipment)] TJ ET
+BT 83.360 623.517 Td /F1 12.0 Tf  [(. Shipments will have a )] TJ ET
+BT 198.692 623.517 Td /F3 12.0 Tf  [(distanceTo\(\))] TJ ET
+BT 285.092 623.517 Td /F1 12.0 Tf  [( method that will return the distance from the shipment )] TJ ET
+BT 34.016 609.261 Td /F1 12.0 Tf  [(to a given position. This simply invokes the )] TJ ET
+BT 247.028 609.261 Td /F3 12.0 Tf  [(distanceTo\(\))] TJ ET
+BT 333.428 609.261 Td /F1 12.0 Tf  [( method of the warehouse's )] TJ ET
+BT 467.228 609.261 Td /F3 12.0 Tf  [(Point)] TJ ET
+BT 503.228 609.261 Td /F1 12.0 Tf  [( instance )] TJ ET
+BT 34.016 595.005 Td /F1 12.0 Tf  [(variable:)] TJ ET
+BT 34.016 570.193 Td /F3 12.0 Tf  [(distanceTo\(Point point\):)] TJ ET
+BT 34.016 557.743 Td /F3 12.0 Tf  [(  return point.distanceTo\(point\))] TJ ET
+BT 34.016 531.848 Td /F2 12.0 Tf  [(Point.)] TJ ET
+BT 64.352 531.848 Td /F1 12.0 Tf  [( The )] TJ ET
+BT 89.012 531.848 Td /F3 12.0 Tf  [(Point)] TJ ET
+BT 125.012 531.848 Td /F1 12.0 Tf  [( class will have a )] TJ ET
+BT 209.996 531.848 Td /F3 12.0 Tf  [(distanceTo\(\))] TJ ET
+BT 296.396 531.848 Td /F1 12.0 Tf  [( method that will return the distance from the point to )] TJ ET
+BT 34.016 517.592 Td /F1 12.0 Tf  [(a given position. This will simply use the distance formula:)] TJ ET
+BT 34.016 491.336 Td /F1 12.0 Tf  [(\\\(\\sqrt{\(x_2 - x_1\)^2 + \(y_2 - y_1\)^2}\\\))] TJ ET
+BT 34.016 466.525 Td /F3 12.0 Tf  [(distanceTo\(Point point\):)] TJ ET
+BT 34.016 454.075 Td /F3 12.0 Tf  [(  return ceil\(sqrt\(\(point.getX\(\) - x\)^2 + \(point.getY\(\) - y\)^2\)\))] TJ ET
+BT 34.016 428.180 Td /F2 12.0 Tf  [(TransportSimulation)] TJ ET
+BT 142.700 428.180 Td /F1 12.0 Tf  [(. The simulation will run for a given number of hours. During each hour, the )] TJ ET
+BT 34.016 413.924 Td /F1 12.0 Tf  [(simulation will call the )] TJ ET
+BT 147.356 413.924 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 204.956 413.924 Td /F1 12.0 Tf  [( and then )] TJ ET
+BT 251.948 413.924 Td /F3 12.0 Tf  [(log\(\))] TJ ET
+BT 287.948 413.924 Td /F1 12.0 Tf  [( method of each truck and warehouse. Once )] TJ ET
+BT 34.016 399.668 Td /F1 12.0 Tf  [(instantiated, the simulation can be started using the )] TJ ET
+BT 282.332 399.668 Td /F3 12.0 Tf  [(run\(int\))] TJ ET
+BT 339.932 399.668 Td /F1 12.0 Tf  [( method.)] TJ ET
+BT 34.016 373.412 Td /F1 12.0 Tf  [(Note)] TJ ET
+0.6 w 0 J [  ] 0 d
+34.016 370.712 m 57.344 370.712 l S
+BT 57.344 373.412 Td /F1 12.0 Tf  [(: This allows for a truck to arrive at a warehouse, and if there is an available dock, the truck can dock )] TJ ET
+BT 34.016 359.156 Td /F1 12.0 Tf  [(and load/unload.)] TJ ET
+BT 34.016 334.344 Td /F3 12.0 Tf  [(run\(int hours\):)] TJ ET
+BT 34.016 321.894 Td /F3 12.0 Tf  [(  int count = 1)] TJ ET
+BT 34.016 309.444 Td /F3 12.0 Tf  [(  while\(count < hours\):)] TJ ET
+BT 34.016 296.994 Td /F3 12.0 Tf  [(    println\("Hour " + count\))] TJ ET
+BT 34.016 284.543 Td /F3 12.0 Tf  [(    for each truck:)] TJ ET
+BT 34.016 272.093 Td /F3 12.0 Tf  [(      truck.action\(\))] TJ ET
+BT 34.016 259.643 Td /F3 12.0 Tf  [(      truck.log\(\))] TJ ET
+BT 34.016 247.193 Td /F3 12.0 Tf  [(    for each warehouse:)] TJ ET
+BT 34.016 234.743 Td /F3 12.0 Tf  [(      warehouse.action\(\))] TJ ET
+BT 34.016 222.292 Td /F3 12.0 Tf  [(      warehouse.log\(\))] TJ ET
+BT 34.016 209.842 Td /F3 12.0 Tf  [(    count++)] TJ ET
+BT 34.016 183.947 Td /F2 12.0 Tf  [(Main Class)] TJ ET
+BT 91.688 183.947 Td /F1 12.0 Tf  [(. The main class will instantiate the simulation and run it for a given number of hours. The )] TJ ET
+BT 34.016 169.691 Td /F3 12.0 Tf  [(main\(\))] TJ ET
+BT 77.216 169.691 Td /F1 12.0 Tf  [( method will take an argument at command line to determine wether to randomize the simulation )] TJ ET
+BT 34.016 155.435 Td /F1 12.0 Tf  [(\(overwrite a config\) or to read in the config.)] TJ ET
+BT 34.016 130.624 Td /F3 12.0 Tf  [(main\(String[] args\):)] TJ ET
+BT 34.016 118.174 Td /F3 12.0 Tf  [(  if args.length > 0 && args[0] == "random":)] TJ ET
+BT 34.016 105.723 Td /F3 12.0 Tf  [(    randomize\(\))] TJ ET
+BT 34.016 93.273 Td /F3 12.0 Tf  [(  readConfig\(\) // read in the config file, assign values to variables)] TJ ET
+BT 34.016 80.823 Td /F3 12.0 Tf  [(  TransportSimulation simulation = new TransportSimulation\(...\) // pass in the config values)] TJ ET
+BT 34.016 68.373 Td /F3 12.0 Tf  [(  simulation.run\(hours\))] TJ ET
+34.016 53.883 m 561.264 53.883 l 560.514 53.133 l 34.766 53.133 l  f
+0.160 0.160 0.160 rg
+0.160 0.160 0.160 RG
+34.016 52.383 m 561.264 52.383 l 560.514 53.133 l 34.766 53.133 l  f
+561.264 53.883 m 561.264 52.383 l 560.514 53.133 l 560.514 53.133 l  f
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+34.016 53.883 m 34.016 52.383 l 34.766 53.133 l 34.766 53.133 l  f
+endstream
+endobj
+21 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 22 0 R
+>>
+endobj
+22 0 obj
+<<
+/Length 7400 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+BT 34.016 775.827 Td /F2 18.0 Tf  [(III. Log Format)] TJ ET
+BT 34.016 745.205 Td /F1 12.0 Tf  [(The log will be printed in the following format:)] TJ ET
+BT 34.016 720.394 Td /F3 12.0 Tf  [(Time: 0)] TJ ET
+BT 34.016 707.944 Td /F3 12.0 Tf  [(Truck 0: \(0, 0\) -> \(1, 1\) [Destination: \(2, 4\); Cargo Hold: \(1/3\)])] TJ ET
+BT 34.016 695.494 Td /F3 12.0 Tf  [(Truck 1: \(0, 0\) -> \(2, 2\))] TJ ET
+BT 34.016 683.043 Td /F3 12.0 Tf  [(Truck 2: \(0, 0\) -> \(3, 3\))] TJ ET
+BT 34.016 670.593 Td /F3 12.0 Tf  [(Truck 3: \(1, 1\) Loaded Shipment id 0 at Warehouse 0 [Destination: \(1, 1\); Cargo Hold: \(1/3\)])] TJ ET
+BT 34.016 658.143 Td /F3 12.0 Tf  [(.)] TJ ET
+BT 34.016 645.693 Td /F3 12.0 Tf  [(.)] TJ ET
+BT 34.016 633.242 Td /F3 12.0 Tf  [(.)] TJ ET
+BT 34.016 620.792 Td /F3 12.0 Tf  [(Time: 3)] TJ ET
+BT 34.016 608.342 Td /F3 12.0 Tf  [(Truck 0: \(1, 1\) -> \(2, 4\) [Destination: \(8, 2\); Cargo Hold: \(1/3\)])] TJ ET
+BT 34.016 595.892 Td /F3 12.0 Tf  [(Truck 1: [Manifest Empty] [Destination: no destination; Cargo Hold: \(0/3\)])] TJ ET
+BT 34.016 583.441 Td /F3 12.0 Tf  [(Truck 2: \(3, 3\) -> \(2, 2\) [Destination: \(1, 1\); Cargo Hold: \(1/3\)])] TJ ET
+BT 34.016 570.991 Td /F3 12.0 Tf  [(Truck 3: \(1, 1\) Loaded Shipment id 1 at Warehouse 0 [Destination: \(1, 1\); Cargo Hold: \(2/3\)])] TJ ET
+BT 34.016 545.096 Td /F1 12.0 Tf  [(Each truck will print:)] TJ ET
+57.816 521.945 m 
+57.816 522.495 57.589 523.041 57.201 523.430 c
+56.812 523.819 56.266 524.045 55.716 524.045 c
+55.166 524.045 54.620 523.819 54.231 523.430 c
+53.842 523.041 53.616 522.495 53.616 521.945 c
+53.616 521.395 53.842 520.849 54.231 520.460 c
+54.620 520.071 55.166 519.845 55.716 519.845 c
+56.266 519.845 56.812 520.071 57.201 520.460 c
+57.589 520.849 57.816 521.395 57.816 521.945 c f
+BT 64.016 518.840 Td /F1 12.0 Tf  [(Its ID)] TJ ET
+57.816 507.689 m 
+57.816 508.239 57.589 508.785 57.201 509.174 c
+56.812 509.563 56.266 509.789 55.716 509.789 c
+55.166 509.789 54.620 509.563 54.231 509.174 c
+53.842 508.785 53.616 508.239 53.616 507.689 c
+53.616 507.139 53.842 506.593 54.231 506.204 c
+54.620 505.815 55.166 505.589 55.716 505.589 c
+56.266 505.589 56.812 505.815 57.201 506.204 c
+57.589 506.593 57.816 507.139 57.816 507.689 c f
+BT 64.016 504.584 Td /F1 12.0 Tf  [(Its current position \(and move if applicable\))] TJ ET
+57.816 493.433 m 
+57.816 493.983 57.589 494.529 57.201 494.918 c
+56.812 495.307 56.266 495.533 55.716 495.533 c
+55.166 495.533 54.620 495.307 54.231 494.918 c
+53.842 494.529 53.616 493.983 53.616 493.433 c
+53.616 492.883 53.842 492.337 54.231 491.948 c
+54.620 491.559 55.166 491.333 55.716 491.333 c
+56.266 491.333 56.812 491.559 57.201 491.948 c
+57.589 492.337 57.816 492.883 57.816 493.433 c f
+BT 64.016 490.328 Td /F1 12.0 Tf  [(Its destination)] TJ ET
+57.816 479.177 m 
+57.816 479.727 57.589 480.273 57.201 480.662 c
+56.812 481.051 56.266 481.277 55.716 481.277 c
+55.166 481.277 54.620 481.051 54.231 480.662 c
+53.842 480.273 53.616 479.727 53.616 479.177 c
+53.616 478.627 53.842 478.081 54.231 477.692 c
+54.620 477.303 55.166 477.077 55.716 477.077 c
+56.266 477.077 56.812 477.303 57.201 477.692 c
+57.589 478.081 57.816 478.627 57.816 479.177 c f
+BT 64.016 476.072 Td /F1 12.0 Tf  [(The number of shipments in its cargo hold)] TJ ET
+BT 34.016 449.816 Td /F1 12.0 Tf  [(This makes the following type of log:)] TJ ET
+BT 34.016 425.005 Td /F3 12.0 Tf  [(Truck %id%: %insert type of action here% [Destination: \(%x%, %y%\); Cargo )] TJ ET
+BT 34.016 412.555 Td /F3 12.0 Tf  [(Hold: \(%current hold size%/%max hold size%\)])] TJ ET
+BT 34.016 386.660 Td /F1 12.0 Tf  [(Or, if the action is at a warehouse:)] TJ ET
+BT 34.016 361.848 Td /F3 12.0 Tf  [(Warehouse %id%: truck %id% %insert type of action here% [Destination: )] TJ ET
+BT 34.016 349.398 Td /F3 12.0 Tf  [(\(%x%, %y%\); Cargo Hold: \(%current hold size%/%max hold size%\)])] TJ ET
+BT 34.016 323.503 Td /F1 12.0 Tf  [(For the action, here are the possibilities:)] TJ ET
+57.816 300.352 m 
+57.816 300.902 57.589 301.448 57.201 301.837 c
+56.812 302.226 56.266 302.452 55.716 302.452 c
+55.166 302.452 54.620 302.226 54.231 301.837 c
+53.842 301.448 53.616 300.902 53.616 300.352 c
+53.616 299.802 53.842 299.256 54.231 298.867 c
+54.620 298.478 55.166 298.252 55.716 298.252 c
+56.266 298.252 56.812 298.478 57.201 298.867 c
+57.589 299.256 57.816 299.802 57.816 300.352 c f
+BT 64.016 297.247 Td /F3 12.0 Tf  [(\(%prevX%, %prevY%\) -> \(%x%, %y%\))] TJ ET
+BT 294.416 297.247 Td /F1 12.0 Tf  [(: The truck is moving from one position to another.)] TJ ET
+57.816 286.096 m 
+57.816 286.646 57.589 287.192 57.201 287.581 c
+56.812 287.970 56.266 288.196 55.716 288.196 c
+55.166 288.196 54.620 287.970 54.231 287.581 c
+53.842 287.192 53.616 286.646 53.616 286.096 c
+53.616 285.546 53.842 285.000 54.231 284.611 c
+54.620 284.222 55.166 283.996 55.716 283.996 c
+56.266 283.996 56.812 284.222 57.201 284.611 c
+57.589 285.000 57.816 285.546 57.816 286.096 c f
+BT 64.016 282.991 Td /F3 12.0 Tf  [(Loaded Shipment id %id% at Warehouse %id%)] TJ ET
+BT 359.216 282.991 Td /F1 12.0 Tf  [(: The truck is loading a shipment at a )] TJ ET
+BT 64.016 268.735 Td /F1 12.0 Tf  [(warehouse.)] TJ ET
+57.816 257.584 m 
+57.816 258.134 57.589 258.680 57.201 259.069 c
+56.812 259.458 56.266 259.684 55.716 259.684 c
+55.166 259.684 54.620 259.458 54.231 259.069 c
+53.842 258.680 53.616 258.134 53.616 257.584 c
+53.616 257.034 53.842 256.488 54.231 256.099 c
+54.620 255.710 55.166 255.484 55.716 255.484 c
+56.266 255.484 56.812 255.710 57.201 256.099 c
+57.589 256.488 57.816 257.034 57.816 257.584 c f
+BT 64.016 254.479 Td /F3 12.0 Tf  [(Unloaded Shipment id %id% at Warehouse %id%)] TJ ET
+BT 373.616 254.479 Td /F1 12.0 Tf  [(: The truck is unloading a shipment at )] TJ ET
+BT 64.016 240.223 Td /F1 12.0 Tf  [(a warehouse.)] TJ ET
+57.816 229.072 m 
+57.816 229.622 57.589 230.168 57.201 230.557 c
+56.812 230.946 56.266 231.172 55.716 231.172 c
+55.166 231.172 54.620 230.946 54.231 230.557 c
+53.842 230.168 53.616 229.622 53.616 229.072 c
+53.616 228.522 53.842 227.976 54.231 227.587 c
+54.620 227.198 55.166 226.972 55.716 226.972 c
+56.266 226.972 56.812 227.198 57.201 227.587 c
+57.589 227.976 57.816 228.522 57.816 229.072 c f
+BT 64.016 225.967 Td /F3 12.0 Tf  [([Manifest Empty])] TJ ET
+BT 179.216 225.967 Td /F1 12.0 Tf  [(: The truck has no shipments in its manifest.)] TJ ET
+34.016 211.116 m 561.264 211.116 l 560.514 210.366 l 34.766 210.366 l  f
+0.160 0.160 0.160 rg
+0.160 0.160 0.160 RG
+34.016 209.616 m 561.264 209.616 l 560.514 210.366 l 34.766 210.366 l  f
+561.264 211.116 m 561.264 209.616 l 560.514 210.366 l 560.514 210.366 l  f
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+34.016 211.116 m 34.016 209.616 l 34.766 210.366 l 34.766 210.366 l  f
+BT 34.016 177.569 Td /F2 18.0 Tf  [(IV. Configuration File)] TJ ET
+BT 34.016 146.947 Td /F2 12.0 Tf  [(Type)] TJ ET
+BT 60.020 146.947 Td /F1 12.0 Tf  [(. The configuration file will be a plaintext file named )] TJ ET
+BT 317.648 146.947 Td /F3 12.0 Tf  [(simulation.properties)] TJ ET
+BT 468.848 146.947 Td /F1 12.0 Tf  [(.)] TJ ET
+BT 34.016 120.691 Td /F2 12.0 Tf  [(Syntax)] TJ ET
+BT 69.356 120.691 Td /F1 12.0 Tf  [(. The configuration file will have the following syntax:)] TJ ET
+BT 34.016 95.880 Td /F3 12.0 Tf  [(setting=value)] TJ ET
+BT 34.016 83.430 Td /F3 12.0 Tf  [(stringSetting="value")] TJ ET
+BT 34.016 70.979 Td /F3 12.0 Tf  [(# Comment)] TJ ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 24 0 R
+>>
+endobj
+24 0 obj
+<<
+/Length 20536 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+BT 34.016 784.469 Td /F2 12.0 Tf  [(Settings)] TJ ET
+BT 74.684 784.469 Td /F1 12.0 Tf  [(. The configuration file will have the following settings:)] TJ ET
+57.816 761.318 m 
+57.816 761.868 57.589 762.414 57.201 762.803 c
+56.812 763.192 56.266 763.418 55.716 763.418 c
+55.166 763.418 54.620 763.192 54.231 762.803 c
+53.842 762.414 53.616 761.868 53.616 761.318 c
+53.616 760.768 53.842 760.222 54.231 759.833 c
+54.620 759.445 55.166 759.218 55.716 759.218 c
+56.266 759.218 56.812 759.445 57.201 759.833 c
+57.589 760.222 57.816 760.768 57.816 761.318 c f
+BT 64.016 746.213 Td /F1 12.0 Tf  [(Simulation Settings)] TJ ET
+0.48 w 1 J 1 j
+87.816 723.062 m 
+87.816 723.612 87.589 724.158 87.201 724.547 c
+86.812 724.936 86.266 725.162 85.716 725.162 c
+85.166 725.162 84.620 724.936 84.231 724.547 c
+83.842 724.158 83.616 723.612 83.616 723.062 c
+83.616 722.512 83.842 721.966 84.231 721.577 c
+84.620 721.189 85.166 720.962 85.716 720.962 c
+86.266 720.962 86.812 721.189 87.201 721.577 c
+87.589 721.966 87.816 722.512 87.816 723.062 c s
+BT 94.016 719.957 Td /F3 12.0 Tf  [(hours)] TJ ET
+BT 130.016 719.957 Td /F1 12.0 Tf  [(: The number of hours the simulation will run. Default is )] TJ ET
+BT 405.332 719.957 Td /F3 12.0 Tf  [(8)] TJ ET
+BT 412.532 719.957 Td /F1 12.0 Tf  [(.)] TJ ET
+0.48 w 1 J 1 j
+87.816 708.806 m 
+87.816 709.356 87.589 709.902 87.201 710.291 c
+86.812 710.680 86.266 710.906 85.716 710.906 c
+85.166 710.906 84.620 710.680 84.231 710.291 c
+83.842 709.902 83.616 709.356 83.616 708.806 c
+83.616 708.256 83.842 707.710 84.231 707.321 c
+84.620 706.933 85.166 706.706 85.716 706.706 c
+86.266 706.706 86.812 706.933 87.201 707.321 c
+87.589 707.710 87.816 708.256 87.816 708.806 c s
+BT 94.016 705.701 Td /F3 12.0 Tf  [(numTrucks)] TJ ET
+BT 158.816 705.701 Td /F1 12.0 Tf  [(: The number of trucks in the simulation. Default is )] TJ ET
+BT 408.464 705.701 Td /F3 12.0 Tf  [(4)] TJ ET
+BT 415.664 705.701 Td /F1 12.0 Tf  [(. )] TJ ET
+BT 421.664 705.701 Td /F1 12.0 Tf  [(Note)] TJ ET
+0.6 w 0 J [  ] 0 d
+421.664 703.001 m 444.992 703.001 l S
+BT 444.992 705.701 Td /F1 12.0 Tf  [(: The size of the trucks )] TJ ET
+BT 94.016 691.445 Td /F1 12.0 Tf  [(is randomized.)] TJ ET
+0.48 w 1 J 1 j
+87.816 680.294 m 
+87.816 680.844 87.589 681.390 87.201 681.779 c
+86.812 682.168 86.266 682.394 85.716 682.394 c
+85.166 682.394 84.620 682.168 84.231 681.779 c
+83.842 681.390 83.616 680.844 83.616 680.294 c
+83.616 679.744 83.842 679.198 84.231 678.809 c
+84.620 678.421 85.166 678.194 85.716 678.194 c
+86.266 678.194 86.812 678.421 87.201 678.809 c
+87.589 679.198 87.816 679.744 87.816 680.294 c s
+BT 94.016 677.189 Td /F3 12.0 Tf  [(numWarehouses)] TJ ET
+BT 187.616 677.189 Td /F1 12.0 Tf  [(: The number of warehouses in the simulation. Default is )] TJ ET
+BT 463.916 677.189 Td /F3 12.0 Tf  [(3)] TJ ET
+BT 471.116 677.189 Td /F1 12.0 Tf  [(.)] TJ ET
+0.48 w 1 J 1 j
+87.816 666.038 m 
+87.816 666.588 87.589 667.134 87.201 667.523 c
+86.812 667.912 86.266 668.138 85.716 668.138 c
+85.166 668.138 84.620 667.912 84.231 667.523 c
+83.842 667.134 83.616 666.588 83.616 666.038 c
+83.616 665.488 83.842 664.942 84.231 664.553 c
+84.620 664.165 85.166 663.938 85.716 663.938 c
+86.266 663.938 86.812 664.165 87.201 664.553 c
+87.589 664.942 87.816 665.488 87.816 666.038 c s
+BT 94.016 662.933 Td /F3 12.0 Tf  [(minShipments)] TJ ET
+BT 180.416 662.933 Td /F1 12.0 Tf  [(: The minimum number of shipments on a truck's manifest. Default is )] TJ ET
+BT 517.556 662.933 Td /F3 12.0 Tf  [(3)] TJ ET
+BT 524.756 662.933 Td /F1 12.0 Tf  [(.)] TJ ET
+0.48 w 1 J 1 j
+87.816 651.782 m 
+87.816 652.332 87.589 652.878 87.201 653.267 c
+86.812 653.656 86.266 653.882 85.716 653.882 c
+85.166 653.882 84.620 653.656 84.231 653.267 c
+83.842 652.878 83.616 652.332 83.616 651.782 c
+83.616 651.232 83.842 650.686 84.231 650.297 c
+84.620 649.909 85.166 649.682 85.716 649.682 c
+86.266 649.682 86.812 649.909 87.201 650.297 c
+87.589 650.686 87.816 651.232 87.816 651.782 c s
+BT 94.016 648.677 Td /F3 12.0 Tf  [(maxShipments)] TJ ET
+BT 180.416 648.677 Td /F1 12.0 Tf  [(: The maximum number of shipments on a truck's manifest. Default is )] TJ ET
+BT 519.548 648.677 Td /F3 12.0 Tf  [(10)] TJ ET
+BT 533.948 648.677 Td /F1 12.0 Tf  [(.)] TJ ET
+0.48 w 1 J 1 j
+87.816 637.526 m 
+87.816 638.076 87.589 638.622 87.201 639.011 c
+86.812 639.400 86.266 639.626 85.716 639.626 c
+85.166 639.626 84.620 639.400 84.231 639.011 c
+83.842 638.622 83.616 638.076 83.616 637.526 c
+83.616 636.976 83.842 636.430 84.231 636.041 c
+84.620 635.653 85.166 635.426 85.716 635.426 c
+86.266 635.426 86.812 635.653 87.201 636.041 c
+87.589 636.430 87.816 636.976 87.816 637.526 c s
+BT 94.016 634.421 Td /F3 12.0 Tf  [(maxX)] TJ ET
+BT 122.816 634.421 Td /F1 12.0 Tf  [(: The maximum x-coordinate of the simulation. Default is )] TJ ET
+BT 403.460 634.421 Td /F3 12.0 Tf  [(10)] TJ ET
+BT 417.860 634.421 Td /F1 12.0 Tf  [(.)] TJ ET
+0.48 w 1 J 1 j
+87.816 623.270 m 
+87.816 623.820 87.589 624.366 87.201 624.755 c
+86.812 625.144 86.266 625.370 85.716 625.370 c
+85.166 625.370 84.620 625.144 84.231 624.755 c
+83.842 624.366 83.616 623.820 83.616 623.270 c
+83.616 622.720 83.842 622.174 84.231 621.785 c
+84.620 621.397 85.166 621.170 85.716 621.170 c
+86.266 621.170 86.812 621.397 87.201 621.785 c
+87.589 622.174 87.816 622.720 87.816 623.270 c s
+BT 94.016 620.165 Td /F3 12.0 Tf  [(maxY)] TJ ET
+BT 122.816 620.165 Td /F1 12.0 Tf  [(: The maximum y-coordinate of the simulation. Default is )] TJ ET
+BT 403.460 620.165 Td /F3 12.0 Tf  [(10)] TJ ET
+BT 417.860 620.165 Td /F1 12.0 Tf  [(.)] TJ ET
+BT 34.016 593.909 Td /F2 12.0 Tf  [(Note)] TJ ET
+BT 58.004 593.909 Td /F1 12.0 Tf  [(: The configuration file will be read in by the )] TJ ET
+BT 277.304 593.909 Td /F3 12.0 Tf  [(TransportSimulation)] TJ ET
+BT 414.104 593.909 Td /F1 12.0 Tf  [( class and used to set the )] TJ ET
+BT 34.016 579.653 Td /F1 12.0 Tf  [(simulation settings. It will be overwritten by the )] TJ ET
+BT 267.680 579.653 Td /F3 12.0 Tf  [(main\(\))] TJ ET
+BT 310.880 579.653 Td /F1 12.0 Tf  [( method of the whole project if the user passes in )] TJ ET
+BT 34.016 565.397 Td /F1 12.0 Tf  [(the command line argument )] TJ ET
+BT 171.332 565.397 Td /F1 12.0 Tf  [(")] TJ ET
+BT 176.228 565.397 Td /F3 12.0 Tf  [(random)] TJ ET
+BT 219.428 565.397 Td /F1 12.0 Tf  [(")] TJ ET
+BT 224.324 565.397 Td /F1 12.0 Tf  [(:)] TJ ET
+BT 34.016 540.586 Td /F3 12.0 Tf  [(java TransportSimulation random)] TJ ET
+BT 34.016 506.049 Td /F2 18.0 Tf  [(V. Testing)] TJ ET
+BT 34.016 475.427 Td /F1 12.0 Tf  [(Here are test cases for each class \(aside from straightforward getters and setters\):)] TJ ET
+57.816 452.276 m 
+57.816 452.826 57.589 453.372 57.201 453.761 c
+56.812 454.150 56.266 454.376 55.716 454.376 c
+55.166 454.376 54.620 454.150 54.231 453.761 c
+53.842 453.372 53.616 452.826 53.616 452.276 c
+53.616 451.726 53.842 451.180 54.231 450.791 c
+54.620 450.402 55.166 450.176 55.716 450.176 c
+56.266 450.176 56.812 450.402 57.201 450.791 c
+57.589 451.180 57.816 451.726 57.816 452.276 c f
+BT 64.016 449.171 Td /F2 12.0 Tf  [(Point)] TJ ET
+BT 91.352 449.171 Td /F1 12.0 Tf  [(: )] TJ ET
+0.48 w 1 J 1 j
+87.816 438.020 m 
+87.816 438.570 87.589 439.116 87.201 439.505 c
+86.812 439.894 86.266 440.120 85.716 440.120 c
+85.166 440.120 84.620 439.894 84.231 439.505 c
+83.842 439.116 83.616 438.570 83.616 438.020 c
+83.616 437.470 83.842 436.924 84.231 436.535 c
+84.620 436.146 85.166 435.920 85.716 435.920 c
+86.266 435.920 86.812 436.146 87.201 436.535 c
+87.589 436.924 87.816 437.470 87.816 438.020 c s
+BT 94.016 434.915 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 434.915 Td /F3 12.0 Tf  [(distanceTo\(\))] TJ ET
+BT 221.744 434.915 Td /F1 12.0 Tf  [( method.)] TJ ET
+57.816 423.764 m 
+57.816 424.314 57.589 424.860 57.201 425.249 c
+56.812 425.638 56.266 425.864 55.716 425.864 c
+55.166 425.864 54.620 425.638 54.231 425.249 c
+53.842 424.860 53.616 424.314 53.616 423.764 c
+53.616 423.214 53.842 422.668 54.231 422.279 c
+54.620 421.890 55.166 421.664 55.716 421.664 c
+56.266 421.664 56.812 421.890 57.201 422.279 c
+57.589 422.668 57.816 423.214 57.816 423.764 c f
+BT 64.016 420.659 Td /F2 12.0 Tf  [(Shipment)] TJ ET
+BT 113.360 420.659 Td /F1 12.0 Tf  [(: )] TJ ET
+0.48 w 1 J 1 j
+87.816 409.508 m 
+87.816 410.058 87.589 410.604 87.201 410.993 c
+86.812 411.382 86.266 411.608 85.716 411.608 c
+85.166 411.608 84.620 411.382 84.231 410.993 c
+83.842 410.604 83.616 410.058 83.616 409.508 c
+83.616 408.958 83.842 408.412 84.231 408.023 c
+84.620 407.634 85.166 407.408 85.716 407.408 c
+86.266 407.408 86.812 407.634 87.201 408.023 c
+87.589 408.412 87.816 408.958 87.816 409.508 c s
+BT 94.016 406.403 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 406.403 Td /F3 12.0 Tf  [(distanceTo\(\))] TJ ET
+BT 221.744 406.403 Td /F1 12.0 Tf  [( method.)] TJ ET
+57.816 395.252 m 
+57.816 395.802 57.589 396.348 57.201 396.737 c
+56.812 397.126 56.266 397.352 55.716 397.352 c
+55.166 397.352 54.620 397.126 54.231 396.737 c
+53.842 396.348 53.616 395.802 53.616 395.252 c
+53.616 394.702 53.842 394.156 54.231 393.767 c
+54.620 393.378 55.166 393.152 55.716 393.152 c
+56.266 393.152 56.812 393.378 57.201 393.767 c
+57.589 394.156 57.816 394.702 57.816 395.252 c f
+BT 64.016 392.147 Td /F2 12.0 Tf  [(Truck)] TJ ET
+BT 96.020 392.147 Td /F1 12.0 Tf  [(: )] TJ ET
+0.48 w 1 J 1 j
+87.816 380.996 m 
+87.816 381.546 87.589 382.092 87.201 382.481 c
+86.812 382.870 86.266 383.096 85.716 383.096 c
+85.166 383.096 84.620 382.870 84.231 382.481 c
+83.842 382.092 83.616 381.546 83.616 380.996 c
+83.616 380.446 83.842 379.900 84.231 379.511 c
+84.620 379.122 85.166 378.896 85.716 378.896 c
+86.266 378.896 86.812 379.122 87.201 379.511 c
+87.589 379.900 87.816 380.446 87.816 380.996 c s
+BT 94.016 377.891 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 377.891 Td /F3 12.0 Tf  [(load\(\))] TJ ET
+BT 178.544 377.891 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 366.740 m 
+87.816 367.290 87.589 367.836 87.201 368.225 c
+86.812 368.614 86.266 368.840 85.716 368.840 c
+85.166 368.840 84.620 368.614 84.231 368.225 c
+83.842 367.836 83.616 367.290 83.616 366.740 c
+83.616 366.190 83.842 365.644 84.231 365.255 c
+84.620 364.866 85.166 364.640 85.716 364.640 c
+86.266 364.640 86.812 364.866 87.201 365.255 c
+87.589 365.644 87.816 366.190 87.816 366.740 c s
+BT 94.016 363.635 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 363.635 Td /F3 12.0 Tf  [(unload\(\))] TJ ET
+BT 192.944 363.635 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 352.484 m 
+87.816 353.034 87.589 353.580 87.201 353.969 c
+86.812 354.358 86.266 354.584 85.716 354.584 c
+85.166 354.584 84.620 354.358 84.231 353.969 c
+83.842 353.580 83.616 353.034 83.616 352.484 c
+83.616 351.934 83.842 351.388 84.231 350.999 c
+84.620 350.610 85.166 350.384 85.716 350.384 c
+86.266 350.384 86.812 350.610 87.201 350.999 c
+87.589 351.388 87.816 351.934 87.816 352.484 c s
+BT 94.016 349.379 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 349.379 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 192.944 349.379 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 338.228 m 
+87.816 338.778 87.589 339.324 87.201 339.713 c
+86.812 340.102 86.266 340.328 85.716 340.328 c
+85.166 340.328 84.620 340.102 84.231 339.713 c
+83.842 339.324 83.616 338.778 83.616 338.228 c
+83.616 337.678 83.842 337.132 84.231 336.743 c
+84.620 336.354 85.166 336.128 85.716 336.128 c
+86.266 336.128 86.812 336.354 87.201 336.743 c
+87.589 337.132 87.816 337.678 87.816 338.228 c s
+BT 94.016 335.123 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 335.123 Td /F3 12.0 Tf  [(move\(\))] TJ ET
+BT 178.544 335.123 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 323.972 m 
+87.816 324.522 87.589 325.068 87.201 325.457 c
+86.812 325.846 86.266 326.072 85.716 326.072 c
+85.166 326.072 84.620 325.846 84.231 325.457 c
+83.842 325.068 83.616 324.522 83.616 323.972 c
+83.616 323.422 83.842 322.876 84.231 322.487 c
+84.620 322.098 85.166 321.872 85.716 321.872 c
+86.266 321.872 86.812 322.098 87.201 322.487 c
+87.589 322.876 87.816 323.422 87.816 323.972 c s
+BT 94.016 320.867 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 320.867 Td /F3 12.0 Tf  [(setDestination\(\))] TJ ET
+BT 250.544 320.867 Td /F1 12.0 Tf  [( method.)] TJ ET
+57.816 309.716 m 
+57.816 310.266 57.589 310.812 57.201 311.201 c
+56.812 311.590 56.266 311.816 55.716 311.816 c
+55.166 311.816 54.620 311.590 54.231 311.201 c
+53.842 310.812 53.616 310.266 53.616 309.716 c
+53.616 309.166 53.842 308.620 54.231 308.231 c
+54.620 307.842 55.166 307.616 55.716 307.616 c
+56.266 307.616 56.812 307.842 57.201 308.231 c
+57.589 308.620 57.816 309.166 57.816 309.716 c f
+BT 64.016 306.611 Td /F2 12.0 Tf  [(Warehouse)] TJ ET
+BT 122.012 306.611 Td /F1 12.0 Tf  [(: )] TJ ET
+0.48 w 1 J 1 j
+87.816 295.460 m 
+87.816 296.010 87.589 296.556 87.201 296.945 c
+86.812 297.334 86.266 297.560 85.716 297.560 c
+85.166 297.560 84.620 297.334 84.231 296.945 c
+83.842 296.556 83.616 296.010 83.616 295.460 c
+83.616 294.910 83.842 294.364 84.231 293.975 c
+84.620 293.586 85.166 293.360 85.716 293.360 c
+86.266 293.360 86.812 293.586 87.201 293.975 c
+87.589 294.364 87.816 294.910 87.816 295.460 c s
+BT 94.016 292.355 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 292.355 Td /F3 12.0 Tf  [(Dock)] TJ ET
+BT 164.144 292.355 Td /F1 12.0 Tf  [( class.)] TJ ET
+0.48 w 1 J 1 j
+87.816 281.204 m 
+87.816 281.754 87.589 282.300 87.201 282.689 c
+86.812 283.078 86.266 283.304 85.716 283.304 c
+85.166 283.304 84.620 283.078 84.231 282.689 c
+83.842 282.300 83.616 281.754 83.616 281.204 c
+83.616 280.654 83.842 280.108 84.231 279.719 c
+84.620 279.330 85.166 279.104 85.716 279.104 c
+86.266 279.104 86.812 279.330 87.201 279.719 c
+87.589 280.108 87.816 280.654 87.816 281.204 c s
+BT 94.016 278.099 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 278.099 Td /F3 12.0 Tf  [(dock\(\))] TJ ET
+BT 178.544 278.099 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 266.948 m 
+87.816 267.498 87.589 268.044 87.201 268.433 c
+86.812 268.822 86.266 269.048 85.716 269.048 c
+85.166 269.048 84.620 268.822 84.231 268.433 c
+83.842 268.044 83.616 267.498 83.616 266.948 c
+83.616 266.398 83.842 265.852 84.231 265.463 c
+84.620 265.074 85.166 264.848 85.716 264.848 c
+86.266 264.848 86.812 265.074 87.201 265.463 c
+87.589 265.852 87.816 266.398 87.816 266.948 c s
+BT 94.016 263.843 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 263.843 Td /F3 12.0 Tf  [(remove\(\))] TJ ET
+BT 192.944 263.843 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 252.692 m 
+87.816 253.242 87.589 253.788 87.201 254.177 c
+86.812 254.566 86.266 254.792 85.716 254.792 c
+85.166 254.792 84.620 254.566 84.231 254.177 c
+83.842 253.788 83.616 253.242 83.616 252.692 c
+83.616 252.142 83.842 251.596 84.231 251.207 c
+84.620 250.818 85.166 250.592 85.716 250.592 c
+86.266 250.592 86.812 250.818 87.201 251.207 c
+87.589 251.596 87.816 252.142 87.816 252.692 c s
+BT 94.016 249.587 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 249.587 Td /F3 12.0 Tf  [(isOccupied\(\))] TJ ET
+BT 221.744 249.587 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 238.436 m 
+87.816 238.986 87.589 239.532 87.201 239.921 c
+86.812 240.310 86.266 240.536 85.716 240.536 c
+85.166 240.536 84.620 240.310 84.231 239.921 c
+83.842 239.532 83.616 238.986 83.616 238.436 c
+83.616 237.886 83.842 237.340 84.231 236.951 c
+84.620 236.562 85.166 236.336 85.716 236.336 c
+86.266 236.336 86.812 236.562 87.201 236.951 c
+87.589 237.340 87.816 237.886 87.816 238.436 c s
+BT 94.016 235.331 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 235.331 Td /F3 12.0 Tf  [(handle\(\))] TJ ET
+BT 192.944 235.331 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 224.180 m 
+87.816 224.730 87.589 225.276 87.201 225.665 c
+86.812 226.054 86.266 226.280 85.716 226.280 c
+85.166 226.280 84.620 226.054 84.231 225.665 c
+83.842 225.276 83.616 224.730 83.616 224.180 c
+83.616 223.630 83.842 223.084 84.231 222.695 c
+84.620 222.306 85.166 222.080 85.716 222.080 c
+86.266 222.080 86.812 222.306 87.201 222.695 c
+87.589 223.084 87.816 223.630 87.816 224.180 c s
+BT 94.016 221.075 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 221.075 Td /F3 12.0 Tf  [(joinQueue\(\))] TJ ET
+BT 214.544 221.075 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 209.924 m 
+87.816 210.474 87.589 211.020 87.201 211.409 c
+86.812 211.798 86.266 212.024 85.716 212.024 c
+85.166 212.024 84.620 211.798 84.231 211.409 c
+83.842 211.020 83.616 210.474 83.616 209.924 c
+83.616 209.374 83.842 208.828 84.231 208.439 c
+84.620 208.050 85.166 207.824 85.716 207.824 c
+86.266 207.824 86.812 208.050 87.201 208.439 c
+87.589 208.828 87.816 209.374 87.816 209.924 c s
+BT 94.016 206.819 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 206.819 Td /F3 12.0 Tf  [(getNumOccupiedDocks\(\))] TJ ET
+BT 286.544 206.819 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 195.668 m 
+87.816 196.218 87.589 196.764 87.201 197.153 c
+86.812 197.542 86.266 197.768 85.716 197.768 c
+85.166 197.768 84.620 197.542 84.231 197.153 c
+83.842 196.764 83.616 196.218 83.616 195.668 c
+83.616 195.118 83.842 194.572 84.231 194.183 c
+84.620 193.794 85.166 193.568 85.716 193.568 c
+86.266 193.568 86.812 193.794 87.201 194.183 c
+87.589 194.572 87.816 195.118 87.816 195.668 c s
+BT 94.016 192.563 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 192.563 Td /F3 12.0 Tf  [(getNumQueuingTrucks\(\))] TJ ET
+BT 286.544 192.563 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 181.412 m 
+87.816 181.962 87.589 182.508 87.201 182.897 c
+86.812 183.286 86.266 183.512 85.716 183.512 c
+85.166 183.512 84.620 183.286 84.231 182.897 c
+83.842 182.508 83.616 181.962 83.616 181.412 c
+83.616 180.862 83.842 180.316 84.231 179.927 c
+84.620 179.538 85.166 179.312 85.716 179.312 c
+86.266 179.312 86.812 179.538 87.201 179.927 c
+87.589 180.316 87.816 180.862 87.816 181.412 c s
+BT 94.016 178.307 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 178.307 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 192.944 178.307 Td /F1 12.0 Tf  [( method.)] TJ ET
+57.816 167.156 m 
+57.816 167.706 57.589 168.252 57.201 168.641 c
+56.812 169.030 56.266 169.256 55.716 169.256 c
+55.166 169.256 54.620 169.030 54.231 168.641 c
+53.842 168.252 53.616 167.706 53.616 167.156 c
+53.616 166.606 53.842 166.060 54.231 165.671 c
+54.620 165.282 55.166 165.056 55.716 165.056 c
+56.266 165.056 56.812 165.282 57.201 165.671 c
+57.589 166.060 57.816 166.606 57.816 167.156 c f
+BT 64.016 164.051 Td /F2 12.0 Tf  [(Manifest)] TJ ET
+BT 109.340 164.051 Td /F1 12.0 Tf  [(: )] TJ ET
+0.48 w 1 J 1 j
+87.816 152.900 m 
+87.816 153.450 87.589 153.996 87.201 154.385 c
+86.812 154.774 86.266 155.000 85.716 155.000 c
+85.166 155.000 84.620 154.774 84.231 154.385 c
+83.842 153.996 83.616 153.450 83.616 152.900 c
+83.616 152.350 83.842 151.804 84.231 151.415 c
+84.620 151.026 85.166 150.800 85.716 150.800 c
+86.266 150.800 86.812 151.026 87.201 151.415 c
+87.589 151.804 87.816 152.350 87.816 152.900 c s
+BT 94.016 149.795 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 149.795 Td /F3 12.0 Tf  [(add\(\))] TJ ET
+BT 171.344 149.795 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 138.644 m 
+87.816 139.194 87.589 139.740 87.201 140.129 c
+86.812 140.518 86.266 140.744 85.716 140.744 c
+85.166 140.744 84.620 140.518 84.231 140.129 c
+83.842 139.740 83.616 139.194 83.616 138.644 c
+83.616 138.094 83.842 137.548 84.231 137.159 c
+84.620 136.770 85.166 136.544 85.716 136.544 c
+86.266 136.544 86.812 136.770 87.201 137.159 c
+87.589 137.548 87.816 138.094 87.816 138.644 c s
+BT 94.016 135.539 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 135.539 Td /F3 12.0 Tf  [(nextPickUp\(\))] TJ ET
+BT 221.744 135.539 Td /F1 12.0 Tf  [( method.)] TJ ET
+0.48 w 1 J 1 j
+87.816 124.388 m 
+87.816 124.938 87.589 125.484 87.201 125.873 c
+86.812 126.262 86.266 126.488 85.716 126.488 c
+85.166 126.488 84.620 126.262 84.231 125.873 c
+83.842 125.484 83.616 124.938 83.616 124.388 c
+83.616 123.838 83.842 123.292 84.231 122.903 c
+84.620 122.514 85.166 122.288 85.716 122.288 c
+86.266 122.288 86.812 122.514 87.201 122.903 c
+87.589 123.292 87.816 123.838 87.816 124.388 c s
+BT 94.016 121.283 Td /F1 12.0 Tf  [(Test the )] TJ ET
+BT 135.344 121.283 Td /F3 12.0 Tf  [(pickUp\(\))] TJ ET
+BT 192.944 121.283 Td /F1 12.0 Tf  [( method.)] TJ ET
+BT 34.016 95.027 Td /F2 12.0 Tf  [(Point)] TJ ET
+BT 61.352 95.027 Td /F1 12.0 Tf  [(. The )] TJ ET
+BT 89.012 95.027 Td /F3 12.0 Tf  [(distanceTo\(\))] TJ ET
+BT 175.412 95.027 Td /F1 12.0 Tf  [( method will be tested by creating two points and calculating the distance )] TJ ET
+BT 34.016 80.771 Td /F1 12.0 Tf  [(between them.)] TJ ET
+BT 48.816 54.520 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 54.515 Td /F1 12.0 Tf  [(P\(0, 0\) and Q\(3, 4\) should have a distance of 1.)] TJ ET
+endstream
+endobj
+25 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 26 0 R
+>>
+endobj
+26 0 obj
+<<
+/Length 7528 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.48 w 1 J 1 j
+BT 48.816 796.474 Td /F1 12.0 Tf  [(2.)] TJ ET
+BT 64.016 796.469 Td /F1 12.0 Tf  [(P\(0, 0\) and Q\(0, 0\) should have a distance of 0.)] TJ ET
+BT 48.816 782.218 Td /F1 12.0 Tf  [(3.)] TJ ET
+BT 64.016 782.213 Td /F1 12.0 Tf  [(P\(1, 7\) and Q\(0, 3\) should have a distance of sqrt\(36 + 9\).)] TJ ET
+BT 34.016 755.957 Td /F2 12.0 Tf  [(Shipment)] TJ ET
+BT 83.360 755.957 Td /F1 12.0 Tf  [(. The )] TJ ET
+BT 111.020 755.957 Td /F3 12.0 Tf  [(distanceTo\(\))] TJ ET
+BT 197.420 755.957 Td /F1 12.0 Tf  [( method will be tested by creating a shipment and a point.)] TJ ET
+BT 48.816 729.706 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 729.701 Td /F1 12.0 Tf  [(P\(0, 0\) and Shipment\(3, 4\) should have a distance of 1.)] TJ ET
+BT 48.816 715.450 Td /F1 12.0 Tf  [(2.)] TJ ET
+BT 64.016 715.445 Td /F1 12.0 Tf  [(P\(0, 0\) and Shipment\(0, 0\) should have a distance of 0.)] TJ ET
+BT 48.816 701.194 Td /F1 12.0 Tf  [(3.)] TJ ET
+BT 64.016 701.189 Td /F1 12.0 Tf  [(P\(1, 7\) and Shipment\(0, 3\) should have a distance of sqrt\(36 + 9\).)] TJ ET
+BT 34.016 674.933 Td /F2 12.0 Tf  [(Truck)] TJ ET
+BT 66.020 674.933 Td /F1 12.0 Tf  [(. The )] TJ ET
+BT 93.680 674.933 Td /F3 12.0 Tf  [(load\(\))] TJ ET
+BT 136.880 674.933 Td /F1 12.0 Tf  [( and )] TJ ET
+BT 160.208 674.933 Td /F3 12.0 Tf  [(unload\(\))] TJ ET
+BT 217.808 674.933 Td /F1 12.0 Tf  [( methods will be tested by creating a truck and warehouse. The truck )] TJ ET
+BT 34.016 660.677 Td /F1 12.0 Tf  [(will load a shipment and then unload it. The test will pass if the shipment is loaded and then unloaded. The )] TJ ET
+BT 34.016 646.421 Td /F3 12.0 Tf  [(load\(\))] TJ ET
+BT 77.216 646.421 Td /F1 12.0 Tf  [( method will also be tested to ensure that the truck cannot load more shipments than its capacity )] TJ ET
+BT 34.016 632.165 Td /F1 12.0 Tf  [(\(should throw a TruckFullException\), and the )] TJ ET
+BT 256.988 632.165 Td /F3 12.0 Tf  [(unload\(\))] TJ ET
+BT 314.588 632.165 Td /F1 12.0 Tf  [( method tested to ensure that the truck cannot )] TJ ET
+BT 34.016 617.909 Td /F1 12.0 Tf  [(unload when empty \(should throw a TruckEmptyException\). Additionally, test the )] TJ ET
+BT 433.316 617.909 Td /F3 12.0 Tf  [(setDestination\(\))] TJ ET
+BT 34.016 603.653 Td /F1 12.0 Tf  [(method to ensure that the truck's destination is set correctly.)] TJ ET
+BT 48.816 577.402 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 565.397 Td /F1 12.0 Tf  [(Truck with capacity 3 loads 3 shipments.)] TJ ET
+57.816 530.246 m 
+57.816 530.796 57.589 531.342 57.201 531.731 c
+56.812 532.120 56.266 532.346 55.716 532.346 c
+55.166 532.346 54.620 532.120 54.231 531.731 c
+53.842 531.342 53.616 530.796 53.616 530.246 c
+53.616 529.696 53.842 529.150 54.231 528.761 c
+54.620 528.373 55.166 528.146 55.716 528.146 c
+56.266 528.146 56.812 528.373 57.201 528.761 c
+57.589 529.150 57.816 529.696 57.816 530.246 c f
+BT 64.016 527.141 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 524.441 m 130.988 524.441 l S
+BT 130.988 527.141 Td /F1 12.0 Tf  [(: Truck has 0 shipments.)] TJ ET
+57.816 515.990 m 
+57.816 516.540 57.589 517.086 57.201 517.475 c
+56.812 517.864 56.266 518.090 55.716 518.090 c
+55.166 518.090 54.620 517.864 54.231 517.475 c
+53.842 517.086 53.616 516.540 53.616 515.990 c
+53.616 515.440 53.842 514.894 54.231 514.505 c
+54.620 514.117 55.166 513.890 55.716 513.890 c
+56.266 513.890 56.812 514.117 57.201 514.505 c
+57.589 514.894 57.816 515.440 57.816 515.990 c f
+BT 64.016 500.885 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 498.185 m 123.656 498.185 l S
+BT 123.656 500.885 Td /F1 12.0 Tf  [(: Truck has 3 shipments, and those have the same ID as the shipments loaded.)] TJ ET
+BT 48.816 462.634 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 450.629 Td /F1 12.0 Tf  [(Truck with capacity 3 loads 4 shipments \(should throw TruckFullException\).)] TJ ET
+57.816 415.478 m 
+57.816 416.028 57.589 416.574 57.201 416.963 c
+56.812 417.352 56.266 417.578 55.716 417.578 c
+55.166 417.578 54.620 417.352 54.231 416.963 c
+53.842 416.574 53.616 416.028 53.616 415.478 c
+53.616 414.928 53.842 414.382 54.231 413.993 c
+54.620 413.605 55.166 413.378 55.716 413.378 c
+56.266 413.378 56.812 413.605 57.201 413.993 c
+57.589 414.382 57.816 414.928 57.816 415.478 c f
+BT 64.016 400.373 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 397.673 m 123.656 397.673 l S
+BT 123.656 400.373 Td /F1 12.0 Tf  [(: the TruckFullException is thrown.)] TJ ET
+BT 48.816 362.122 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 350.117 Td /F1 12.0 Tf  [(Truck with capacity 3 unloads 3 shipments.)] TJ ET
+57.816 314.966 m 
+57.816 315.516 57.589 316.062 57.201 316.451 c
+56.812 316.840 56.266 317.066 55.716 317.066 c
+55.166 317.066 54.620 316.840 54.231 316.451 c
+53.842 316.062 53.616 315.516 53.616 314.966 c
+53.616 314.416 53.842 313.870 54.231 313.481 c
+54.620 313.093 55.166 312.866 55.716 312.866 c
+56.266 312.866 56.812 313.093 57.201 313.481 c
+57.589 313.870 57.816 314.416 57.816 314.966 c f
+BT 64.016 311.861 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 309.161 m 130.988 309.161 l S
+BT 130.988 311.861 Td /F1 12.0 Tf  [(: Truck has 3 shipments.)] TJ ET
+57.816 300.710 m 
+57.816 301.260 57.589 301.806 57.201 302.195 c
+56.812 302.584 56.266 302.810 55.716 302.810 c
+55.166 302.810 54.620 302.584 54.231 302.195 c
+53.842 301.806 53.616 301.260 53.616 300.710 c
+53.616 300.160 53.842 299.614 54.231 299.225 c
+54.620 298.837 55.166 298.610 55.716 298.610 c
+56.266 298.610 56.812 298.837 57.201 299.225 c
+57.589 299.614 57.816 300.160 57.816 300.710 c f
+BT 64.016 285.605 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 282.905 m 123.656 282.905 l S
+BT 123.656 285.605 Td /F1 12.0 Tf  [(: Truck has 0 shipments.)] TJ ET
+BT 48.816 247.354 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 235.349 Td /F1 12.0 Tf  [(Empty truck unloads \(should throw TruckEmptyException\).)] TJ ET
+57.816 200.198 m 
+57.816 200.748 57.589 201.294 57.201 201.683 c
+56.812 202.072 56.266 202.298 55.716 202.298 c
+55.166 202.298 54.620 202.072 54.231 201.683 c
+53.842 201.294 53.616 200.748 53.616 200.198 c
+53.616 199.648 53.842 199.102 54.231 198.713 c
+54.620 198.325 55.166 198.098 55.716 198.098 c
+56.266 198.098 56.812 198.325 57.201 198.713 c
+57.589 199.102 57.816 199.648 57.816 200.198 c f
+BT 64.016 197.093 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 194.393 m 123.656 194.393 l S
+BT 123.656 197.093 Td /F1 12.0 Tf  [(: the TruckEmptyException is thrown.)] TJ ET
+BT 34.016 170.837 Td /F1 12.0 Tf  [(To test the )] TJ ET
+BT 87.680 170.837 Td /F3 12.0 Tf  [(setDestination\(\))] TJ ET
+BT 202.880 170.837 Td /F1 12.0 Tf  [( method:)] TJ ET
+BT 48.816 144.586 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 132.581 Td /F1 12.0 Tf  [([Pickup is closer] Truck at \(0, 0\) with cargo destined for \(3, 4\) and a pickup at \(1, 1\) calls )] TJ ET
+BT 64.016 118.325 Td /F3 12.0 Tf  [(setDestination\(\))] TJ ET
+BT 179.216 118.325 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 83.174 m 
+57.816 83.724 57.589 84.270 57.201 84.659 c
+56.812 85.048 56.266 85.274 55.716 85.274 c
+55.166 85.274 54.620 85.048 54.231 84.659 c
+53.842 84.270 53.616 83.724 53.616 83.174 c
+53.616 82.624 53.842 82.078 54.231 81.689 c
+54.620 81.301 55.166 81.074 55.716 81.074 c
+56.266 81.074 56.812 81.301 57.201 81.689 c
+57.589 82.078 57.816 82.624 57.816 83.174 c f
+BT 64.016 68.069 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 65.369 m 123.656 65.369 l S
+BT 123.656 68.069 Td /F1 12.0 Tf  [(: Truck's destination is \(1, 1\).)] TJ ET
+endstream
+endobj
+27 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 28 0 R
+>>
+endobj
+28 0 obj
+<<
+/Length 8017 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+BT 48.816 796.474 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 784.469 Td /F1 12.0 Tf  [([Dropoff is closer] Truck at \(0, 0\) with cargo destined for \(1, 1\) and a pickup at \(3, 4\) calls )] TJ ET
+BT 64.016 770.213 Td /F3 12.0 Tf  [(setDestination\(\))] TJ ET
+BT 179.216 770.213 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 735.062 m 
+57.816 735.612 57.589 736.158 57.201 736.547 c
+56.812 736.936 56.266 737.162 55.716 737.162 c
+55.166 737.162 54.620 736.936 54.231 736.547 c
+53.842 736.158 53.616 735.612 53.616 735.062 c
+53.616 734.512 53.842 733.966 54.231 733.577 c
+54.620 733.189 55.166 732.962 55.716 732.962 c
+56.266 732.962 56.812 733.189 57.201 733.577 c
+57.589 733.966 57.816 734.512 57.816 735.062 c f
+BT 64.016 719.957 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 717.257 m 123.656 717.257 l S
+BT 123.656 719.957 Td /F1 12.0 Tf  [(: Truck's destination is \(1, 1\).)] TJ ET
+BT 48.816 681.706 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 669.701 Td /F1 12.0 Tf  [([Pickup and dropoff are equidistant] Truck at \(1, 0\) with cargo \(id = 0\) destined for \(0, 0\) and a pickup )] TJ ET
+BT 64.016 655.445 Td /F1 12.0 Tf  [(\(id = 1\) at \(2, 0\) calls )] TJ ET
+BT 168.764 655.445 Td /F3 12.0 Tf  [(setDestination\(\))] TJ ET
+BT 283.964 655.445 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 620.294 m 
+57.816 620.844 57.589 621.390 57.201 621.779 c
+56.812 622.168 56.266 622.394 55.716 622.394 c
+55.166 622.394 54.620 622.168 54.231 621.779 c
+53.842 621.390 53.616 620.844 53.616 620.294 c
+53.616 619.744 53.842 619.198 54.231 618.809 c
+54.620 618.421 55.166 618.194 55.716 618.194 c
+56.266 618.194 56.812 618.421 57.201 618.809 c
+57.589 619.198 57.816 619.744 57.816 620.294 c f
+BT 64.016 605.189 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 602.489 m 123.656 602.489 l S
+BT 123.656 605.189 Td /F1 12.0 Tf  [(: Truck's destination is \(2, 0\). )] TJ ET
+BT 267.140 605.189 Td /F1 12.0 Tf  [(\(This is because in the case of equidistance, the larger ID is )] TJ ET
+0.6 w 0 J [  ] 0 d
+267.140 602.489 m 555.404 602.489 l S
+BT 64.016 590.933 Td /F1 12.0 Tf  [(the tiebreaker\))] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 588.233 m 133.652 588.233 l S
+BT 48.816 552.682 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 540.677 Td /F1 12.0 Tf  [([Pickup and dropoff are equidistant] Truck at \(1, 0\) with cargo \(id = 1\) destined for \(0, 0\) and a pickup )] TJ ET
+BT 64.016 526.421 Td /F1 12.0 Tf  [(\(id = 0\) at \(2, 0\) calls )] TJ ET
+BT 168.764 526.421 Td /F3 12.0 Tf  [(setDestination\(\))] TJ ET
+BT 283.964 526.421 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 491.270 m 
+57.816 491.820 57.589 492.366 57.201 492.755 c
+56.812 493.144 56.266 493.370 55.716 493.370 c
+55.166 493.370 54.620 493.144 54.231 492.755 c
+53.842 492.366 53.616 491.820 53.616 491.270 c
+53.616 490.720 53.842 490.174 54.231 489.785 c
+54.620 489.397 55.166 489.170 55.716 489.170 c
+56.266 489.170 56.812 489.397 57.201 489.785 c
+57.589 490.174 57.816 490.720 57.816 491.270 c f
+BT 64.016 488.165 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 485.465 m 123.656 485.465 l S
+BT 123.656 488.165 Td /F1 12.0 Tf  [(: Truck's destination is \(0, 0\). )] TJ ET
+BT 267.140 488.165 Td /F1 12.0 Tf  [(\(This is because in the case of equidistance, the larger ID is )] TJ ET
+0.6 w 0 J [  ] 0 d
+267.140 485.465 m 555.404 485.465 l S
+BT 64.016 473.909 Td /F1 12.0 Tf  [(the tiebreaker\))] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 471.209 m 133.652 471.209 l S
+BT 34.016 447.653 Td /F1 12.0 Tf  [(To test the )] TJ ET
+BT 87.680 447.653 Td /F3 12.0 Tf  [(move\(\))] TJ ET
+BT 130.880 447.653 Td /F1 12.0 Tf  [( method:)] TJ ET
+BT 48.816 421.402 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 409.397 Td /F1 12.0 Tf  [(Truck at \(0, 0\) with speed 1 and destination \(1, 1\) calls )] TJ ET
+BT 329.972 409.397 Td /F3 12.0 Tf  [(move\(\))] TJ ET
+BT 373.172 409.397 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 374.246 m 
+57.816 374.796 57.589 375.342 57.201 375.731 c
+56.812 376.120 56.266 376.346 55.716 376.346 c
+55.166 376.346 54.620 376.120 54.231 375.731 c
+53.842 375.342 53.616 374.796 53.616 374.246 c
+53.616 373.696 53.842 373.150 54.231 372.761 c
+54.620 372.373 55.166 372.146 55.716 372.146 c
+56.266 372.146 56.812 372.373 57.201 372.761 c
+57.589 373.150 57.816 373.696 57.816 374.246 c f
+BT 64.016 371.141 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 368.441 m 130.988 368.441 l S
+BT 130.988 371.141 Td /F1 12.0 Tf  [(: Truck is at \(0, 0\).)] TJ ET
+57.816 359.990 m 
+57.816 360.540 57.589 361.086 57.201 361.475 c
+56.812 361.864 56.266 362.090 55.716 362.090 c
+55.166 362.090 54.620 361.864 54.231 361.475 c
+53.842 361.086 53.616 360.540 53.616 359.990 c
+53.616 359.440 53.842 358.894 54.231 358.505 c
+54.620 358.117 55.166 357.890 55.716 357.890 c
+56.266 357.890 56.812 358.117 57.201 358.505 c
+57.589 358.894 57.816 359.440 57.816 359.990 c f
+BT 64.016 344.885 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 342.185 m 123.656 342.185 l S
+BT 123.656 344.885 Td /F1 12.0 Tf  [(: Truck is at \(1, 1\).)] TJ ET
+BT 48.816 306.634 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 294.629 Td /F1 12.0 Tf  [(Truck at \(0, 0\) with speed 1 and destination \(0, 0\) calls )] TJ ET
+BT 329.972 294.629 Td /F3 12.0 Tf  [(move\(\))] TJ ET
+BT 373.172 294.629 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 259.478 m 
+57.816 260.028 57.589 260.574 57.201 260.963 c
+56.812 261.352 56.266 261.578 55.716 261.578 c
+55.166 261.578 54.620 261.352 54.231 260.963 c
+53.842 260.574 53.616 260.028 53.616 259.478 c
+53.616 258.928 53.842 258.382 54.231 257.993 c
+54.620 257.605 55.166 257.378 55.716 257.378 c
+56.266 257.378 56.812 257.605 57.201 257.993 c
+57.589 258.382 57.816 258.928 57.816 259.478 c f
+BT 64.016 256.373 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 253.673 m 130.988 253.673 l S
+BT 130.988 256.373 Td /F1 12.0 Tf  [(: Truck is at \(0, 0\).)] TJ ET
+57.816 245.222 m 
+57.816 245.772 57.589 246.318 57.201 246.707 c
+56.812 247.096 56.266 247.322 55.716 247.322 c
+55.166 247.322 54.620 247.096 54.231 246.707 c
+53.842 246.318 53.616 245.772 53.616 245.222 c
+53.616 244.672 53.842 244.126 54.231 243.737 c
+54.620 243.349 55.166 243.122 55.716 243.122 c
+56.266 243.122 56.812 243.349 57.201 243.737 c
+57.589 244.126 57.816 244.672 57.816 245.222 c f
+BT 64.016 230.117 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 227.417 m 123.656 227.417 l S
+BT 123.656 230.117 Td /F1 12.0 Tf  [(: Truck is at \(0, 0\).)] TJ ET
+BT 48.816 191.866 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 179.861 Td /F1 12.0 Tf  [(Truck at \(0, 0\) with speed 3 and destination \(1, 1\) calls )] TJ ET
+BT 329.972 179.861 Td /F3 12.0 Tf  [(move\(\))] TJ ET
+BT 373.172 179.861 Td /F1 12.0 Tf  [(. [Test potentially overshooting the )] TJ ET
+BT 64.016 165.605 Td /F1 12.0 Tf  [(destination])] TJ ET
+57.816 130.454 m 
+57.816 131.004 57.589 131.550 57.201 131.939 c
+56.812 132.328 56.266 132.554 55.716 132.554 c
+55.166 132.554 54.620 132.328 54.231 131.939 c
+53.842 131.550 53.616 131.004 53.616 130.454 c
+53.616 129.904 53.842 129.358 54.231 128.969 c
+54.620 128.581 55.166 128.354 55.716 128.354 c
+56.266 128.354 56.812 128.581 57.201 128.969 c
+57.589 129.358 57.816 129.904 57.816 130.454 c f
+BT 64.016 127.349 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 124.649 m 130.988 124.649 l S
+BT 130.988 127.349 Td /F1 12.0 Tf  [(: Truck is at \(0, 0\).)] TJ ET
+57.816 116.198 m 
+57.816 116.748 57.589 117.294 57.201 117.683 c
+56.812 118.072 56.266 118.298 55.716 118.298 c
+55.166 118.298 54.620 118.072 54.231 117.683 c
+53.842 117.294 53.616 116.748 53.616 116.198 c
+53.616 115.648 53.842 115.102 54.231 114.713 c
+54.620 114.325 55.166 114.098 55.716 114.098 c
+56.266 114.098 56.812 114.325 57.201 114.713 c
+57.589 115.102 57.816 115.648 57.816 116.198 c f
+BT 64.016 101.093 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 98.393 m 123.656 98.393 l S
+BT 123.656 101.093 Td /F1 12.0 Tf  [(: Truck is at \(1, 1\).)] TJ ET
+BT 48.816 62.842 Td /F1 12.0 Tf  [(1.)] TJ ET
+endstream
+endobj
+29 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 30 0 R
+>>
+endobj
+30 0 obj
+<<
+/Length 11374 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+BT 64.016 784.469 Td /F1 12.0 Tf  [(Truck at \(0, 0\) with speed 2 and destination \(4, 4\) calls )] TJ ET
+BT 329.972 784.469 Td /F3 12.0 Tf  [(move\(\))] TJ ET
+BT 373.172 784.469 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 749.318 m 
+57.816 749.868 57.589 750.414 57.201 750.803 c
+56.812 751.192 56.266 751.418 55.716 751.418 c
+55.166 751.418 54.620 751.192 54.231 750.803 c
+53.842 750.414 53.616 749.868 53.616 749.318 c
+53.616 748.768 53.842 748.222 54.231 747.833 c
+54.620 747.445 55.166 747.218 55.716 747.218 c
+56.266 747.218 56.812 747.445 57.201 747.833 c
+57.589 748.222 57.816 748.768 57.816 749.318 c f
+BT 64.016 746.213 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 743.513 m 130.988 743.513 l S
+BT 130.988 746.213 Td /F1 12.0 Tf  [(: Truck is at \(0, 0\).)] TJ ET
+57.816 735.062 m 
+57.816 735.612 57.589 736.158 57.201 736.547 c
+56.812 736.936 56.266 737.162 55.716 737.162 c
+55.166 737.162 54.620 736.936 54.231 736.547 c
+53.842 736.158 53.616 735.612 53.616 735.062 c
+53.616 734.512 53.842 733.966 54.231 733.577 c
+54.620 733.189 55.166 732.962 55.716 732.962 c
+56.266 732.962 56.812 733.189 57.201 733.577 c
+57.589 733.966 57.816 734.512 57.816 735.062 c f
+BT 64.016 731.957 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 729.257 m 123.656 729.257 l S
+BT 123.656 731.957 Td /F1 12.0 Tf  [(: Truck is at \(2, 2\).)] TJ ET
+BT 34.016 705.701 Td /F1 12.0 Tf  [(To test the )] TJ ET
+BT 87.680 705.701 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 145.280 705.701 Td /F1 12.0 Tf  [( method:)] TJ ET
+BT 48.816 679.450 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 667.445 Td /F1 12.0 Tf  [(Truck at \(0, 0\) with speed 1 and destination \(1, 1\) calls )] TJ ET
+BT 329.972 667.445 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 387.572 667.445 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 632.294 m 
+57.816 632.844 57.589 633.390 57.201 633.779 c
+56.812 634.168 56.266 634.394 55.716 634.394 c
+55.166 634.394 54.620 634.168 54.231 633.779 c
+53.842 633.390 53.616 632.844 53.616 632.294 c
+53.616 631.744 53.842 631.198 54.231 630.809 c
+54.620 630.421 55.166 630.194 55.716 630.194 c
+56.266 630.194 56.812 630.421 57.201 630.809 c
+57.589 631.198 57.816 631.744 57.816 632.294 c f
+BT 64.016 629.189 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 626.489 m 130.988 626.489 l S
+BT 130.988 629.189 Td /F1 12.0 Tf  [(: Truck is at \(0, 0\).)] TJ ET
+57.816 618.038 m 
+57.816 618.588 57.589 619.134 57.201 619.523 c
+56.812 619.912 56.266 620.138 55.716 620.138 c
+55.166 620.138 54.620 619.912 54.231 619.523 c
+53.842 619.134 53.616 618.588 53.616 618.038 c
+53.616 617.488 53.842 616.942 54.231 616.553 c
+54.620 616.165 55.166 615.938 55.716 615.938 c
+56.266 615.938 56.812 616.165 57.201 616.553 c
+57.589 616.942 57.816 617.488 57.816 618.038 c f
+BT 64.016 602.933 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 600.233 m 123.656 600.233 l S
+BT 123.656 602.933 Td /F1 12.0 Tf  [(: Truck is at \(1, 1\).)] TJ ET
+BT 48.816 564.682 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 552.677 Td /F1 12.0 Tf  [(Truck at \(1, 1\) with speed 1 and destination \(1, 1\) calls )] TJ ET
+BT 329.972 552.677 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 387.572 552.677 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 517.526 m 
+57.816 518.076 57.589 518.622 57.201 519.011 c
+56.812 519.400 56.266 519.626 55.716 519.626 c
+55.166 519.626 54.620 519.400 54.231 519.011 c
+53.842 518.622 53.616 518.076 53.616 517.526 c
+53.616 516.976 53.842 516.430 54.231 516.041 c
+54.620 515.653 55.166 515.426 55.716 515.426 c
+56.266 515.426 56.812 515.653 57.201 516.041 c
+57.589 516.430 57.816 516.976 57.816 517.526 c f
+BT 64.016 514.421 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 511.721 m 130.988 511.721 l S
+BT 130.988 514.421 Td /F1 12.0 Tf  [(: Truck is at \(1, 1\).)] TJ ET
+57.816 503.270 m 
+57.816 503.820 57.589 504.366 57.201 504.755 c
+56.812 505.144 56.266 505.370 55.716 505.370 c
+55.166 505.370 54.620 505.144 54.231 504.755 c
+53.842 504.366 53.616 503.820 53.616 503.270 c
+53.616 502.720 53.842 502.174 54.231 501.785 c
+54.620 501.397 55.166 501.170 55.716 501.170 c
+56.266 501.170 56.812 501.397 57.201 501.785 c
+57.589 502.174 57.816 502.720 57.816 503.270 c f
+BT 64.016 500.165 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 497.465 m 123.656 497.465 l S
+BT 123.656 500.165 Td /F1 12.0 Tf  [(: Truck is at \(1, 1\).)] TJ ET
+57.816 489.014 m 
+57.816 489.564 57.589 490.110 57.201 490.499 c
+56.812 490.888 56.266 491.114 55.716 491.114 c
+55.166 491.114 54.620 490.888 54.231 490.499 c
+53.842 490.110 53.616 489.564 53.616 489.014 c
+53.616 488.464 53.842 487.918 54.231 487.529 c
+54.620 487.141 55.166 486.914 55.716 486.914 c
+56.266 486.914 56.812 487.141 57.201 487.529 c
+57.589 487.918 57.816 488.464 57.816 489.014 c f
+BT 64.016 485.909 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 483.209 m 123.656 483.209 l S
+BT 123.656 485.909 Td /F1 12.0 Tf  [(: Truck is in the queue for the warehouse at \(1, 1\).)] TJ ET
+BT 34.016 459.653 Td /F2 12.0 Tf  [(Warehouse)] TJ ET
+BT 92.012 459.653 Td /F1 12.0 Tf  [(. Test functionality of the )] TJ ET
+BT 216.668 459.653 Td /F3 12.0 Tf  [(Dock)] TJ ET
+BT 245.468 459.653 Td /F1 12.0 Tf  [( class. Test )] TJ ET
+BT 301.460 459.653 Td /F3 12.0 Tf  [(dock\(\))] TJ ET
+BT 344.660 459.653 Td /F1 12.0 Tf  [( and )] TJ ET
+BT 367.988 459.653 Td /F3 12.0 Tf  [(remove\(\))] TJ ET
+BT 425.588 459.653 Td /F1 12.0 Tf  [(, and )] TJ ET
+BT 451.916 459.653 Td /F3 12.0 Tf  [(isOccupied\(\))] TJ ET
+BT 34.016 445.397 Td /F1 12.0 Tf  [(methods. Test that the dock can only load and unload one truck at a time. Also ensure that )] TJ ET
+BT 469.292 445.397 Td /F3 12.0 Tf  [(joinQueue\(\))] TJ ET
+BT 34.016 431.141 Td /F1 12.0 Tf  [(works and that trucks are loaded out of the queue after )] TJ ET
+BT 298.280 431.141 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 355.880 431.141 Td /F1 12.0 Tf  [( is called. Test for both scenarios where )] TJ ET
+BT 34.016 416.885 Td /F1 12.0 Tf  [(trucks are left over in the queue and scenarios where all trucks have docked.)] TJ ET
+BT 48.816 390.634 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 378.629 Td /F1 12.0 Tf  [(Dock with capacity 1 docks 1 truck.)] TJ ET
+57.816 343.478 m 
+57.816 344.028 57.589 344.574 57.201 344.963 c
+56.812 345.352 56.266 345.578 55.716 345.578 c
+55.166 345.578 54.620 345.352 54.231 344.963 c
+53.842 344.574 53.616 344.028 53.616 343.478 c
+53.616 342.928 53.842 342.382 54.231 341.993 c
+54.620 341.605 55.166 341.378 55.716 341.378 c
+56.266 341.378 56.812 341.605 57.201 341.993 c
+57.589 342.382 57.816 342.928 57.816 343.478 c f
+BT 64.016 340.373 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 337.673 m 130.988 337.673 l S
+BT 130.988 340.373 Td /F1 12.0 Tf  [(: Dock is empty.)] TJ ET
+57.816 329.222 m 
+57.816 329.772 57.589 330.318 57.201 330.707 c
+56.812 331.096 56.266 331.322 55.716 331.322 c
+55.166 331.322 54.620 331.096 54.231 330.707 c
+53.842 330.318 53.616 329.772 53.616 329.222 c
+53.616 328.672 53.842 328.126 54.231 327.737 c
+54.620 327.349 55.166 327.122 55.716 327.122 c
+56.266 327.122 56.812 327.349 57.201 327.737 c
+57.589 328.126 57.816 328.672 57.816 329.222 c f
+BT 64.016 326.117 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 323.417 m 123.656 323.417 l S
+BT 123.656 326.117 Td /F1 12.0 Tf  [(: Dock has 1 truck.)] TJ ET
+57.816 314.966 m 
+57.816 315.516 57.589 316.062 57.201 316.451 c
+56.812 316.840 56.266 317.066 55.716 317.066 c
+55.166 317.066 54.620 316.840 54.231 316.451 c
+53.842 316.062 53.616 315.516 53.616 314.966 c
+53.616 314.416 53.842 313.870 54.231 313.481 c
+54.620 313.093 55.166 312.866 55.716 312.866 c
+56.266 312.866 56.812 313.093 57.201 313.481 c
+57.589 313.870 57.816 314.416 57.816 314.966 c f
+BT 64.016 299.861 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 297.161 m 123.656 297.161 l S
+BT 123.656 299.861 Td /F1 12.0 Tf  [(: )] TJ ET
+BT 129.992 299.861 Td /F3 12.0 Tf  [(isOccupied\(\))] TJ ET
+BT 216.392 299.861 Td /F1 12.0 Tf  [( returns true.)] TJ ET
+BT 48.816 261.610 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 249.605 Td /F1 12.0 Tf  [(The above dock removes the truck.)] TJ ET
+57.816 214.454 m 
+57.816 215.004 57.589 215.550 57.201 215.939 c
+56.812 216.328 56.266 216.554 55.716 216.554 c
+55.166 216.554 54.620 216.328 54.231 215.939 c
+53.842 215.550 53.616 215.004 53.616 214.454 c
+53.616 213.904 53.842 213.358 54.231 212.969 c
+54.620 212.581 55.166 212.354 55.716 212.354 c
+56.266 212.354 56.812 212.581 57.201 212.969 c
+57.589 213.358 57.816 213.904 57.816 214.454 c f
+BT 64.016 211.349 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 208.649 m 130.988 208.649 l S
+BT 130.988 211.349 Td /F1 12.0 Tf  [(: Dock has 1 truck. \(Same as above\))] TJ ET
+57.816 200.198 m 
+57.816 200.748 57.589 201.294 57.201 201.683 c
+56.812 202.072 56.266 202.298 55.716 202.298 c
+55.166 202.298 54.620 202.072 54.231 201.683 c
+53.842 201.294 53.616 200.748 53.616 200.198 c
+53.616 199.648 53.842 199.102 54.231 198.713 c
+54.620 198.325 55.166 198.098 55.716 198.098 c
+56.266 198.098 56.812 198.325 57.201 198.713 c
+57.589 199.102 57.816 199.648 57.816 200.198 c f
+BT 64.016 197.093 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 194.393 m 123.656 194.393 l S
+BT 123.656 197.093 Td /F1 12.0 Tf  [(: Dock is empty.)] TJ ET
+57.816 185.942 m 
+57.816 186.492 57.589 187.038 57.201 187.427 c
+56.812 187.816 56.266 188.042 55.716 188.042 c
+55.166 188.042 54.620 187.816 54.231 187.427 c
+53.842 187.038 53.616 186.492 53.616 185.942 c
+53.616 185.392 53.842 184.846 54.231 184.457 c
+54.620 184.069 55.166 183.842 55.716 183.842 c
+56.266 183.842 56.812 184.069 57.201 184.457 c
+57.589 184.846 57.816 185.392 57.816 185.942 c f
+BT 64.016 182.837 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 180.137 m 123.656 180.137 l S
+BT 123.656 182.837 Td /F1 12.0 Tf  [(: )] TJ ET
+BT 129.992 182.837 Td /F3 12.0 Tf  [(isOccupied\(\))] TJ ET
+BT 216.392 182.837 Td /F1 12.0 Tf  [( returns false.)] TJ ET
+BT 34.016 156.581 Td /F1 12.0 Tf  [(To test the )] TJ ET
+BT 87.680 156.581 Td /F3 12.0 Tf  [(handle\(\))] TJ ET
+BT 145.280 156.581 Td /F1 12.0 Tf  [( method:)] TJ ET
+BT 48.816 130.330 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 118.325 Td /F1 12.0 Tf  [(Dock with capacity 1 docks 1 truck with no more buisness at the dock and calls )] TJ ET
+BT 448.628 118.325 Td /F3 12.0 Tf  [(handle\(\))] TJ ET
+BT 506.228 118.325 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 83.174 m 
+57.816 83.724 57.589 84.270 57.201 84.659 c
+56.812 85.048 56.266 85.274 55.716 85.274 c
+55.166 85.274 54.620 85.048 54.231 84.659 c
+53.842 84.270 53.616 83.724 53.616 83.174 c
+53.616 82.624 53.842 82.078 54.231 81.689 c
+54.620 81.301 55.166 81.074 55.716 81.074 c
+56.266 81.074 56.812 81.301 57.201 81.689 c
+57.589 82.078 57.816 82.624 57.816 83.174 c f
+BT 64.016 80.069 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 77.369 m 130.988 77.369 l S
+BT 130.988 80.069 Td /F1 12.0 Tf  [(: Dock has a truck.)] TJ ET
+57.816 68.918 m 
+57.816 69.468 57.589 70.014 57.201 70.403 c
+56.812 70.792 56.266 71.018 55.716 71.018 c
+55.166 71.018 54.620 70.792 54.231 70.403 c
+53.842 70.014 53.616 69.468 53.616 68.918 c
+53.616 68.368 53.842 67.822 54.231 67.433 c
+54.620 67.045 55.166 66.818 55.716 66.818 c
+56.266 66.818 56.812 67.045 57.201 67.433 c
+57.589 67.822 57.816 68.368 57.816 68.918 c f
+endstream
+endobj
+31 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 32 0 R
+>>
+endobj
+32 0 obj
+<<
+/Length 11207 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+BT 64.016 784.469 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 781.769 m 123.656 781.769 l S
+BT 123.656 784.469 Td /F1 12.0 Tf  [(: Dock is empty.)] TJ ET
+BT 48.816 746.218 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 734.213 Td /F1 12.0 Tf  [(Dock with capacity 1 docks 1 truck with a shipment to load and calls )] TJ ET
+BT 397.976 734.213 Td /F3 12.0 Tf  [(handle\(\))] TJ ET
+BT 455.576 734.213 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 699.062 m 
+57.816 699.612 57.589 700.158 57.201 700.547 c
+56.812 700.936 56.266 701.162 55.716 701.162 c
+55.166 701.162 54.620 700.936 54.231 700.547 c
+53.842 700.158 53.616 699.612 53.616 699.062 c
+53.616 698.512 53.842 697.966 54.231 697.577 c
+54.620 697.189 55.166 696.962 55.716 696.962 c
+56.266 696.962 56.812 697.189 57.201 697.577 c
+57.589 697.966 57.816 698.512 57.816 699.062 c f
+BT 64.016 695.957 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 693.257 m 130.988 693.257 l S
+BT 130.988 695.957 Td /F1 12.0 Tf  [(: Dock has a truck.)] TJ ET
+57.816 684.806 m 
+57.816 685.356 57.589 685.902 57.201 686.291 c
+56.812 686.680 56.266 686.906 55.716 686.906 c
+55.166 686.906 54.620 686.680 54.231 686.291 c
+53.842 685.902 53.616 685.356 53.616 684.806 c
+53.616 684.256 53.842 683.710 54.231 683.321 c
+54.620 682.933 55.166 682.706 55.716 682.706 c
+56.266 682.706 56.812 682.933 57.201 683.321 c
+57.589 683.710 57.816 684.256 57.816 684.806 c f
+BT 64.016 681.701 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 679.001 m 123.656 679.001 l S
+BT 123.656 681.701 Td /F1 12.0 Tf  [(: Dock has a truck.)] TJ ET
+57.816 670.550 m 
+57.816 671.100 57.589 671.646 57.201 672.035 c
+56.812 672.424 56.266 672.650 55.716 672.650 c
+55.166 672.650 54.620 672.424 54.231 672.035 c
+53.842 671.646 53.616 671.100 53.616 670.550 c
+53.616 670.000 53.842 669.454 54.231 669.065 c
+54.620 668.677 55.166 668.450 55.716 668.450 c
+56.266 668.450 56.812 668.677 57.201 669.065 c
+57.589 669.454 57.816 670.000 57.816 670.550 c f
+BT 64.016 655.445 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 652.745 m 123.656 652.745 l S
+BT 123.656 655.445 Td /F1 12.0 Tf  [(: )] TJ ET
+BT 129.992 655.445 Td /F3 12.0 Tf  [(truck)] TJ ET
+BT 165.992 655.445 Td /F1 12.0 Tf  [( has loaded a shipment.)] TJ ET
+BT 48.816 617.194 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 605.189 Td /F1 12.0 Tf  [(Dock with capacity 1 docks 1 truck with a shipment to unload and calls )] TJ ET
+BT 409.976 605.189 Td /F3 12.0 Tf  [(handle\(\))] TJ ET
+BT 467.576 605.189 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 570.038 m 
+57.816 570.588 57.589 571.134 57.201 571.523 c
+56.812 571.912 56.266 572.138 55.716 572.138 c
+55.166 572.138 54.620 571.912 54.231 571.523 c
+53.842 571.134 53.616 570.588 53.616 570.038 c
+53.616 569.488 53.842 568.942 54.231 568.553 c
+54.620 568.165 55.166 567.938 55.716 567.938 c
+56.266 567.938 56.812 568.165 57.201 568.553 c
+57.589 568.942 57.816 569.488 57.816 570.038 c f
+BT 64.016 566.933 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 564.233 m 130.988 564.233 l S
+BT 130.988 566.933 Td /F1 12.0 Tf  [(: Dock has a truck.)] TJ ET
+57.816 555.782 m 
+57.816 556.332 57.589 556.878 57.201 557.267 c
+56.812 557.656 56.266 557.882 55.716 557.882 c
+55.166 557.882 54.620 557.656 54.231 557.267 c
+53.842 556.878 53.616 556.332 53.616 555.782 c
+53.616 555.232 53.842 554.686 54.231 554.297 c
+54.620 553.909 55.166 553.682 55.716 553.682 c
+56.266 553.682 56.812 553.909 57.201 554.297 c
+57.589 554.686 57.816 555.232 57.816 555.782 c f
+BT 64.016 552.677 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 549.977 m 123.656 549.977 l S
+BT 123.656 552.677 Td /F1 12.0 Tf  [(: Dock has a truck.)] TJ ET
+57.816 541.526 m 
+57.816 542.076 57.589 542.622 57.201 543.011 c
+56.812 543.400 56.266 543.626 55.716 543.626 c
+55.166 543.626 54.620 543.400 54.231 543.011 c
+53.842 542.622 53.616 542.076 53.616 541.526 c
+53.616 540.976 53.842 540.430 54.231 540.041 c
+54.620 539.653 55.166 539.426 55.716 539.426 c
+56.266 539.426 56.812 539.653 57.201 540.041 c
+57.589 540.430 57.816 540.976 57.816 541.526 c f
+BT 64.016 526.421 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 523.721 m 123.656 523.721 l S
+BT 123.656 526.421 Td /F1 12.0 Tf  [(: )] TJ ET
+BT 129.992 526.421 Td /F3 12.0 Tf  [(truck)] TJ ET
+BT 165.992 526.421 Td /F1 12.0 Tf  [( has unloaded a shipment.)] TJ ET
+BT 48.816 488.170 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 476.165 Td /F1 12.0 Tf  [(Dock with capacity 1 docks 1 truck with a shipment to load and unload and calls )] TJ ET
+BT 453.968 476.165 Td /F3 12.0 Tf  [(handle\(\))] TJ ET
+BT 511.568 476.165 Td /F1 12.0 Tf  [(.)] TJ ET
+57.816 441.014 m 
+57.816 441.564 57.589 442.110 57.201 442.499 c
+56.812 442.888 56.266 443.114 55.716 443.114 c
+55.166 443.114 54.620 442.888 54.231 442.499 c
+53.842 442.110 53.616 441.564 53.616 441.014 c
+53.616 440.464 53.842 439.918 54.231 439.529 c
+54.620 439.141 55.166 438.914 55.716 438.914 c
+56.266 438.914 56.812 439.141 57.201 439.529 c
+57.589 439.918 57.816 440.464 57.816 441.014 c f
+BT 64.016 437.909 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 435.209 m 130.988 435.209 l S
+BT 130.988 437.909 Td /F1 12.0 Tf  [(: Dock has a truck.)] TJ ET
+57.816 426.758 m 
+57.816 427.308 57.589 427.854 57.201 428.243 c
+56.812 428.632 56.266 428.858 55.716 428.858 c
+55.166 428.858 54.620 428.632 54.231 428.243 c
+53.842 427.854 53.616 427.308 53.616 426.758 c
+53.616 426.208 53.842 425.662 54.231 425.273 c
+54.620 424.885 55.166 424.658 55.716 424.658 c
+56.266 424.658 56.812 424.885 57.201 425.273 c
+57.589 425.662 57.816 426.208 57.816 426.758 c f
+BT 64.016 423.653 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 420.953 m 123.656 420.953 l S
+BT 123.656 423.653 Td /F1 12.0 Tf  [(: Dock has a truck.)] TJ ET
+57.816 412.502 m 
+57.816 413.052 57.589 413.598 57.201 413.987 c
+56.812 414.376 56.266 414.602 55.716 414.602 c
+55.166 414.602 54.620 414.376 54.231 413.987 c
+53.842 413.598 53.616 413.052 53.616 412.502 c
+53.616 411.952 53.842 411.406 54.231 411.017 c
+54.620 410.629 55.166 410.402 55.716 410.402 c
+56.266 410.402 56.812 410.629 57.201 411.017 c
+57.589 411.406 57.816 411.952 57.816 412.502 c f
+BT 64.016 397.397 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 394.697 m 123.656 394.697 l S
+BT 123.656 397.397 Td /F1 12.0 Tf  [(: )] TJ ET
+BT 129.992 397.397 Td /F3 12.0 Tf  [(truck)] TJ ET
+BT 165.992 397.397 Td /F1 12.0 Tf  [( has unloaded a shipment.)] TJ ET
+BT 48.816 359.146 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 347.141 Td /F1 12.0 Tf  [(The above dock calls )] TJ ET
+BT 168.656 347.141 Td /F3 12.0 Tf  [(handle\(\))] TJ ET
+BT 226.256 347.141 Td /F1 12.0 Tf  [( again.)] TJ ET
+57.816 311.990 m 
+57.816 312.540 57.589 313.086 57.201 313.475 c
+56.812 313.864 56.266 314.090 55.716 314.090 c
+55.166 314.090 54.620 313.864 54.231 313.475 c
+53.842 313.086 53.616 312.540 53.616 311.990 c
+53.616 311.440 53.842 310.894 54.231 310.505 c
+54.620 310.117 55.166 309.890 55.716 309.890 c
+56.266 309.890 56.812 310.117 57.201 310.505 c
+57.589 310.894 57.816 311.440 57.816 311.990 c f
+BT 64.016 308.885 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 306.185 m 130.988 306.185 l S
+BT 130.988 308.885 Td /F1 12.0 Tf  [(: Dock has a truck. \(as above\))] TJ ET
+57.816 297.734 m 
+57.816 298.284 57.589 298.830 57.201 299.219 c
+56.812 299.608 56.266 299.834 55.716 299.834 c
+55.166 299.834 54.620 299.608 54.231 299.219 c
+53.842 298.830 53.616 298.284 53.616 297.734 c
+53.616 297.184 53.842 296.638 54.231 296.249 c
+54.620 295.861 55.166 295.634 55.716 295.634 c
+56.266 295.634 56.812 295.861 57.201 296.249 c
+57.589 296.638 57.816 297.184 57.816 297.734 c f
+BT 64.016 294.629 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 291.929 m 123.656 291.929 l S
+BT 123.656 294.629 Td /F1 12.0 Tf  [(: Dock has a truck.)] TJ ET
+57.816 283.478 m 
+57.816 284.028 57.589 284.574 57.201 284.963 c
+56.812 285.352 56.266 285.578 55.716 285.578 c
+55.166 285.578 54.620 285.352 54.231 284.963 c
+53.842 284.574 53.616 284.028 53.616 283.478 c
+53.616 282.928 53.842 282.382 54.231 281.993 c
+54.620 281.605 55.166 281.378 55.716 281.378 c
+56.266 281.378 56.812 281.605 57.201 281.993 c
+57.589 282.382 57.816 282.928 57.816 283.478 c f
+BT 64.016 268.373 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 265.673 m 123.656 265.673 l S
+BT 123.656 268.373 Td /F1 12.0 Tf  [(: )] TJ ET
+BT 129.992 268.373 Td /F3 12.0 Tf  [(truck)] TJ ET
+BT 165.992 268.373 Td /F1 12.0 Tf  [( has loaded a shipment.)] TJ ET
+BT 48.816 230.122 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 218.117 Td /F1 12.0 Tf  [(The above dock calls )] TJ ET
+BT 168.656 218.117 Td /F3 12.0 Tf  [(handle\(\))] TJ ET
+BT 226.256 218.117 Td /F1 12.0 Tf  [( again.)] TJ ET
+57.816 182.966 m 
+57.816 183.516 57.589 184.062 57.201 184.451 c
+56.812 184.840 56.266 185.066 55.716 185.066 c
+55.166 185.066 54.620 184.840 54.231 184.451 c
+53.842 184.062 53.616 183.516 53.616 182.966 c
+53.616 182.416 53.842 181.870 54.231 181.481 c
+54.620 181.093 55.166 180.866 55.716 180.866 c
+56.266 180.866 56.812 181.093 57.201 181.481 c
+57.589 181.870 57.816 182.416 57.816 182.966 c f
+BT 64.016 179.861 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 177.161 m 130.988 177.161 l S
+BT 130.988 179.861 Td /F1 12.0 Tf  [(: Dock has a truck. \(as above\))] TJ ET
+57.816 168.710 m 
+57.816 169.260 57.589 169.806 57.201 170.195 c
+56.812 170.584 56.266 170.810 55.716 170.810 c
+55.166 170.810 54.620 170.584 54.231 170.195 c
+53.842 169.806 53.616 169.260 53.616 168.710 c
+53.616 168.160 53.842 167.614 54.231 167.225 c
+54.620 166.837 55.166 166.610 55.716 166.610 c
+56.266 166.610 56.812 166.837 57.201 167.225 c
+57.589 167.614 57.816 168.160 57.816 168.710 c f
+BT 64.016 165.605 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 162.905 m 123.656 162.905 l S
+BT 123.656 165.605 Td /F1 12.0 Tf  [(: Dock is empty.)] TJ ET
+BT 34.016 139.349 Td /F1 12.0 Tf  [(To test the )] TJ ET
+BT 87.680 139.349 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 145.280 139.349 Td /F1 12.0 Tf  [( method, consider the whole )] TJ ET
+BT 283.928 139.349 Td /F3 12.0 Tf  [(Warehouse)] TJ ET
+BT 348.728 139.349 Td /F1 12.0 Tf  [( class \(using )] TJ ET
+BT 411.056 139.349 Td /F3 12.0 Tf  [(joinQueue\(\))] TJ ET
+BT 490.256 139.349 Td /F1 12.0 Tf  [(\):)] TJ ET
+BT 48.816 113.098 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 101.093 Td /F1 12.0 Tf  [(Warehouse with 1 dock and 1 truck \(with empty manifest\) in the queue. )] TJ ET
+BT 411.956 101.093 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 469.556 101.093 Td /F1 12.0 Tf  [( is called.)] TJ ET
+57.816 65.942 m 
+57.816 66.492 57.589 67.038 57.201 67.427 c
+56.812 67.816 56.266 68.042 55.716 68.042 c
+55.166 68.042 54.620 67.816 54.231 67.427 c
+53.842 67.038 53.616 66.492 53.616 65.942 c
+53.616 65.392 53.842 64.846 54.231 64.457 c
+54.620 64.069 55.166 63.842 55.716 63.842 c
+56.266 63.842 56.812 64.069 57.201 64.457 c
+57.589 64.846 57.816 65.392 57.816 65.942 c f
+BT 64.016 62.837 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 60.137 m 130.988 60.137 l S
+BT 130.988 62.837 Td /F1 12.0 Tf  [(: There are 0 docked trucks.)] TJ ET
+endstream
+endobj
+33 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 34 0 R
+>>
+endobj
+34 0 obj
+<<
+/Length 13916 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+57.816 799.574 m 
+57.816 800.124 57.589 800.670 57.201 801.059 c
+56.812 801.448 56.266 801.674 55.716 801.674 c
+55.166 801.674 54.620 801.448 54.231 801.059 c
+53.842 800.670 53.616 800.124 53.616 799.574 c
+53.616 799.024 53.842 798.478 54.231 798.089 c
+54.620 797.701 55.166 797.474 55.716 797.474 c
+56.266 797.474 56.812 797.701 57.201 798.089 c
+57.589 798.478 57.816 799.024 57.816 799.574 c f
+BT 64.016 796.469 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 793.769 m 130.988 793.769 l S
+BT 130.988 796.469 Td /F1 12.0 Tf  [(: Queue has 1 truck.)] TJ ET
+57.816 785.318 m 
+57.816 785.868 57.589 786.414 57.201 786.803 c
+56.812 787.192 56.266 787.418 55.716 787.418 c
+55.166 787.418 54.620 787.192 54.231 786.803 c
+53.842 786.414 53.616 785.868 53.616 785.318 c
+53.616 784.768 53.842 784.222 54.231 783.833 c
+54.620 783.445 55.166 783.218 55.716 783.218 c
+56.266 783.218 56.812 783.445 57.201 783.833 c
+57.589 784.222 57.816 784.768 57.816 785.318 c f
+BT 64.016 782.213 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 779.513 m 123.656 779.513 l S
+BT 123.656 782.213 Td /F1 12.0 Tf  [(: There is 1 docked truck.)] TJ ET
+57.816 771.062 m 
+57.816 771.612 57.589 772.158 57.201 772.547 c
+56.812 772.936 56.266 773.162 55.716 773.162 c
+55.166 773.162 54.620 772.936 54.231 772.547 c
+53.842 772.158 53.616 771.612 53.616 771.062 c
+53.616 770.512 53.842 769.966 54.231 769.577 c
+54.620 769.189 55.166 768.962 55.716 768.962 c
+56.266 768.962 56.812 769.189 57.201 769.577 c
+57.589 769.966 57.816 770.512 57.816 771.062 c f
+BT 64.016 767.957 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 765.257 m 123.656 765.257 l S
+BT 123.656 767.957 Td /F1 12.0 Tf  [(: Queue has 0 trucks.)] TJ ET
+BT 34.016 741.701 Td /F1 12.0 Tf  [(Extend this to a multi-dock scenario:)] TJ ET
+BT 48.816 715.450 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 703.445 Td /F1 12.0 Tf  [(Warehouse with 2 docks and 2 trucks \(with empty manifests\) in the queue. )] TJ ET
+BT 425.960 703.445 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 483.560 703.445 Td /F1 12.0 Tf  [( is called.)] TJ ET
+57.816 668.294 m 
+57.816 668.844 57.589 669.390 57.201 669.779 c
+56.812 670.168 56.266 670.394 55.716 670.394 c
+55.166 670.394 54.620 670.168 54.231 669.779 c
+53.842 669.390 53.616 668.844 53.616 668.294 c
+53.616 667.744 53.842 667.198 54.231 666.809 c
+54.620 666.421 55.166 666.194 55.716 666.194 c
+56.266 666.194 56.812 666.421 57.201 666.809 c
+57.589 667.198 57.816 667.744 57.816 668.294 c f
+BT 64.016 665.189 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 662.489 m 130.988 662.489 l S
+BT 130.988 665.189 Td /F1 12.0 Tf  [(: There are 0 docked trucks.)] TJ ET
+57.816 654.038 m 
+57.816 654.588 57.589 655.134 57.201 655.523 c
+56.812 655.912 56.266 656.138 55.716 656.138 c
+55.166 656.138 54.620 655.912 54.231 655.523 c
+53.842 655.134 53.616 654.588 53.616 654.038 c
+53.616 653.488 53.842 652.942 54.231 652.553 c
+54.620 652.165 55.166 651.938 55.716 651.938 c
+56.266 651.938 56.812 652.165 57.201 652.553 c
+57.589 652.942 57.816 653.488 57.816 654.038 c f
+BT 64.016 650.933 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 648.233 m 130.988 648.233 l S
+BT 130.988 650.933 Td /F1 12.0 Tf  [(: Queue has 2 trucks.)] TJ ET
+57.816 639.782 m 
+57.816 640.332 57.589 640.878 57.201 641.267 c
+56.812 641.656 56.266 641.882 55.716 641.882 c
+55.166 641.882 54.620 641.656 54.231 641.267 c
+53.842 640.878 53.616 640.332 53.616 639.782 c
+53.616 639.232 53.842 638.686 54.231 638.297 c
+54.620 637.909 55.166 637.682 55.716 637.682 c
+56.266 637.682 56.812 637.909 57.201 638.297 c
+57.589 638.686 57.816 639.232 57.816 639.782 c f
+BT 64.016 636.677 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 633.977 m 123.656 633.977 l S
+BT 123.656 636.677 Td /F1 12.0 Tf  [(: There are 2 docked trucks.)] TJ ET
+57.816 625.526 m 
+57.816 626.076 57.589 626.622 57.201 627.011 c
+56.812 627.400 56.266 627.626 55.716 627.626 c
+55.166 627.626 54.620 627.400 54.231 627.011 c
+53.842 626.622 53.616 626.076 53.616 625.526 c
+53.616 624.976 53.842 624.430 54.231 624.041 c
+54.620 623.653 55.166 623.426 55.716 623.426 c
+56.266 623.426 56.812 623.653 57.201 624.041 c
+57.589 624.430 57.816 624.976 57.816 625.526 c f
+BT 64.016 610.421 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 607.721 m 123.656 607.721 l S
+BT 123.656 610.421 Td /F1 12.0 Tf  [(: Queue has 0 trucks.)] TJ ET
+BT 48.816 572.170 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 560.165 Td /F1 12.0 Tf  [(Warehouse with 2 docks and 3 trucks \(with empty manifests\) in the queue. )] TJ ET
+BT 425.960 560.165 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 483.560 560.165 Td /F1 12.0 Tf  [( is called.)] TJ ET
+57.816 525.014 m 
+57.816 525.564 57.589 526.110 57.201 526.499 c
+56.812 526.888 56.266 527.114 55.716 527.114 c
+55.166 527.114 54.620 526.888 54.231 526.499 c
+53.842 526.110 53.616 525.564 53.616 525.014 c
+53.616 524.464 53.842 523.918 54.231 523.529 c
+54.620 523.141 55.166 522.914 55.716 522.914 c
+56.266 522.914 56.812 523.141 57.201 523.529 c
+57.589 523.918 57.816 524.464 57.816 525.014 c f
+BT 64.016 521.909 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 519.209 m 130.988 519.209 l S
+BT 130.988 521.909 Td /F1 12.0 Tf  [(: There are 0 docked trucks.)] TJ ET
+57.816 510.758 m 
+57.816 511.308 57.589 511.854 57.201 512.243 c
+56.812 512.632 56.266 512.858 55.716 512.858 c
+55.166 512.858 54.620 512.632 54.231 512.243 c
+53.842 511.854 53.616 511.308 53.616 510.758 c
+53.616 510.208 53.842 509.662 54.231 509.273 c
+54.620 508.885 55.166 508.658 55.716 508.658 c
+56.266 508.658 56.812 508.885 57.201 509.273 c
+57.589 509.662 57.816 510.208 57.816 510.758 c f
+BT 64.016 507.653 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 504.953 m 130.988 504.953 l S
+BT 130.988 507.653 Td /F1 12.0 Tf  [(: Queue has 3 trucks.)] TJ ET
+57.816 496.502 m 
+57.816 497.052 57.589 497.598 57.201 497.987 c
+56.812 498.376 56.266 498.602 55.716 498.602 c
+55.166 498.602 54.620 498.376 54.231 497.987 c
+53.842 497.598 53.616 497.052 53.616 496.502 c
+53.616 495.952 53.842 495.406 54.231 495.017 c
+54.620 494.629 55.166 494.402 55.716 494.402 c
+56.266 494.402 56.812 494.629 57.201 495.017 c
+57.589 495.406 57.816 495.952 57.816 496.502 c f
+BT 64.016 493.397 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 490.697 m 123.656 490.697 l S
+BT 123.656 493.397 Td /F1 12.0 Tf  [(: There are 2 docked trucks.)] TJ ET
+57.816 482.246 m 
+57.816 482.796 57.589 483.342 57.201 483.731 c
+56.812 484.120 56.266 484.346 55.716 484.346 c
+55.166 484.346 54.620 484.120 54.231 483.731 c
+53.842 483.342 53.616 482.796 53.616 482.246 c
+53.616 481.696 53.842 481.150 54.231 480.761 c
+54.620 480.373 55.166 480.146 55.716 480.146 c
+56.266 480.146 56.812 480.373 57.201 480.761 c
+57.589 481.150 57.816 481.696 57.816 482.246 c f
+BT 64.016 467.141 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 464.441 m 123.656 464.441 l S
+BT 123.656 467.141 Td /F1 12.0 Tf  [(: Queue has 1 truck.)] TJ ET
+BT 48.816 428.890 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 416.885 Td /F1 12.0 Tf  [(Call )] TJ ET
+BT 87.020 416.885 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 144.620 416.885 Td /F1 12.0 Tf  [( again.)] TJ ET
+57.816 381.734 m 
+57.816 382.284 57.589 382.830 57.201 383.219 c
+56.812 383.608 56.266 383.834 55.716 383.834 c
+55.166 383.834 54.620 383.608 54.231 383.219 c
+53.842 382.830 53.616 382.284 53.616 381.734 c
+53.616 381.184 53.842 380.638 54.231 380.249 c
+54.620 379.861 55.166 379.634 55.716 379.634 c
+56.266 379.634 56.812 379.861 57.201 380.249 c
+57.589 380.638 57.816 381.184 57.816 381.734 c f
+BT 64.016 378.629 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 375.929 m 130.988 375.929 l S
+BT 130.988 378.629 Td /F1 12.0 Tf  [(: Handled above.)] TJ ET
+57.816 367.478 m 
+57.816 368.028 57.589 368.574 57.201 368.963 c
+56.812 369.352 56.266 369.578 55.716 369.578 c
+55.166 369.578 54.620 369.352 54.231 368.963 c
+53.842 368.574 53.616 368.028 53.616 367.478 c
+53.616 366.928 53.842 366.382 54.231 365.993 c
+54.620 365.605 55.166 365.378 55.716 365.378 c
+56.266 365.378 56.812 365.605 57.201 365.993 c
+57.589 366.382 57.816 366.928 57.816 367.478 c f
+BT 64.016 364.373 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 361.673 m 123.656 361.673 l S
+BT 123.656 364.373 Td /F1 12.0 Tf  [(: There is 1 docked truck.)] TJ ET
+57.816 353.222 m 
+57.816 353.772 57.589 354.318 57.201 354.707 c
+56.812 355.096 56.266 355.322 55.716 355.322 c
+55.166 355.322 54.620 355.096 54.231 354.707 c
+53.842 354.318 53.616 353.772 53.616 353.222 c
+53.616 352.672 53.842 352.126 54.231 351.737 c
+54.620 351.349 55.166 351.122 55.716 351.122 c
+56.266 351.122 56.812 351.349 57.201 351.737 c
+57.589 352.126 57.816 352.672 57.816 353.222 c f
+BT 64.016 338.117 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 335.417 m 123.656 335.417 l S
+BT 123.656 338.117 Td /F1 12.0 Tf  [(: Queue has 0 trucks.)] TJ ET
+BT 48.816 299.866 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 287.861 Td /F1 12.0 Tf  [(Call )] TJ ET
+BT 87.020 287.861 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 144.620 287.861 Td /F1 12.0 Tf  [( again.)] TJ ET
+57.816 252.710 m 
+57.816 253.260 57.589 253.806 57.201 254.195 c
+56.812 254.584 56.266 254.810 55.716 254.810 c
+55.166 254.810 54.620 254.584 54.231 254.195 c
+53.842 253.806 53.616 253.260 53.616 252.710 c
+53.616 252.160 53.842 251.614 54.231 251.225 c
+54.620 250.837 55.166 250.610 55.716 250.610 c
+56.266 250.610 56.812 250.837 57.201 251.225 c
+57.589 251.614 57.816 252.160 57.816 252.710 c f
+BT 64.016 249.605 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 246.905 m 130.988 246.905 l S
+BT 130.988 249.605 Td /F1 12.0 Tf  [(: Handled above.)] TJ ET
+57.816 238.454 m 
+57.816 239.004 57.589 239.550 57.201 239.939 c
+56.812 240.328 56.266 240.554 55.716 240.554 c
+55.166 240.554 54.620 240.328 54.231 239.939 c
+53.842 239.550 53.616 239.004 53.616 238.454 c
+53.616 237.904 53.842 237.358 54.231 236.969 c
+54.620 236.581 55.166 236.354 55.716 236.354 c
+56.266 236.354 56.812 236.581 57.201 236.969 c
+57.589 237.358 57.816 237.904 57.816 238.454 c f
+BT 64.016 235.349 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 232.649 m 123.656 232.649 l S
+BT 123.656 235.349 Td /F1 12.0 Tf  [(: There are 0 docked trucks.)] TJ ET
+57.816 224.198 m 
+57.816 224.748 57.589 225.294 57.201 225.683 c
+56.812 226.072 56.266 226.298 55.716 226.298 c
+55.166 226.298 54.620 226.072 54.231 225.683 c
+53.842 225.294 53.616 224.748 53.616 224.198 c
+53.616 223.648 53.842 223.102 54.231 222.713 c
+54.620 222.325 55.166 222.098 55.716 222.098 c
+56.266 222.098 56.812 222.325 57.201 222.713 c
+57.589 223.102 57.816 223.648 57.816 224.198 c f
+BT 64.016 209.093 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 206.393 m 123.656 206.393 l S
+BT 123.656 209.093 Td /F1 12.0 Tf  [(: Queue has 0 trucks.)] TJ ET
+BT 48.816 170.842 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 158.837 Td /F1 12.0 Tf  [(Warehouse with 2 docks and 3 trucks \(with manifests with one shipment each and with one dropoff )] TJ ET
+BT 64.016 144.581 Td /F1 12.0 Tf  [(each\) in the queue. )] TJ ET
+BT 157.652 144.581 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 215.252 144.581 Td /F1 12.0 Tf  [( is called.)] TJ ET
+57.816 109.430 m 
+57.816 109.980 57.589 110.526 57.201 110.915 c
+56.812 111.304 56.266 111.530 55.716 111.530 c
+55.166 111.530 54.620 111.304 54.231 110.915 c
+53.842 110.526 53.616 109.980 53.616 109.430 c
+53.616 108.880 53.842 108.334 54.231 107.945 c
+54.620 107.557 55.166 107.330 55.716 107.330 c
+56.266 107.330 56.812 107.557 57.201 107.945 c
+57.589 108.334 57.816 108.880 57.816 109.430 c f
+BT 64.016 106.325 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 103.625 m 130.988 103.625 l S
+BT 130.988 106.325 Td /F1 12.0 Tf  [(: There are 0 docked trucks.)] TJ ET
+57.816 95.174 m 
+57.816 95.724 57.589 96.270 57.201 96.659 c
+56.812 97.048 56.266 97.274 55.716 97.274 c
+55.166 97.274 54.620 97.048 54.231 96.659 c
+53.842 96.270 53.616 95.724 53.616 95.174 c
+53.616 94.624 53.842 94.078 54.231 93.689 c
+54.620 93.301 55.166 93.074 55.716 93.074 c
+56.266 93.074 56.812 93.301 57.201 93.689 c
+57.589 94.078 57.816 94.624 57.816 95.174 c f
+BT 64.016 92.069 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 89.369 m 130.988 89.369 l S
+BT 130.988 92.069 Td /F1 12.0 Tf  [(: Queue has 3 trucks.)] TJ ET
+57.816 80.918 m 
+57.816 81.468 57.589 82.014 57.201 82.403 c
+56.812 82.792 56.266 83.018 55.716 83.018 c
+55.166 83.018 54.620 82.792 54.231 82.403 c
+53.842 82.014 53.616 81.468 53.616 80.918 c
+53.616 80.368 53.842 79.822 54.231 79.433 c
+54.620 79.045 55.166 78.818 55.716 78.818 c
+56.266 78.818 56.812 79.045 57.201 79.433 c
+57.589 79.822 57.816 80.368 57.816 80.918 c f
+BT 64.016 77.813 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 75.113 m 123.656 75.113 l S
+BT 123.656 77.813 Td /F1 12.0 Tf  [(: There are 2 docked trucks.)] TJ ET
+57.816 66.662 m 
+57.816 67.212 57.589 67.758 57.201 68.147 c
+56.812 68.536 56.266 68.762 55.716 68.762 c
+55.166 68.762 54.620 68.536 54.231 68.147 c
+53.842 67.758 53.616 67.212 53.616 66.662 c
+53.616 66.112 53.842 65.566 54.231 65.177 c
+54.620 64.789 55.166 64.562 55.716 64.562 c
+56.266 64.562 56.812 64.789 57.201 65.177 c
+57.589 65.566 57.816 66.112 57.816 66.662 c f
+BT 64.016 63.557 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 60.857 m 123.656 60.857 l S
+BT 123.656 63.557 Td /F1 12.0 Tf  [(: Queue has 1 truck.)] TJ ET
+57.816 52.406 m 
+57.816 52.956 57.589 53.502 57.201 53.891 c
+56.812 54.280 56.266 54.506 55.716 54.506 c
+55.166 54.506 54.620 54.280 54.231 53.891 c
+53.842 53.502 53.616 52.956 53.616 52.406 c
+53.616 51.856 53.842 51.310 54.231 50.921 c
+54.620 50.533 55.166 50.306 55.716 50.306 c
+56.266 50.306 56.812 50.533 57.201 50.921 c
+57.589 51.310 57.816 51.856 57.816 52.406 c f
+endstream
+endobj
+35 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/Contents 36 0 R
+>>
+endobj
+36 0 obj
+<<
+/Length 11883 >>
+stream
+
+0.000 0.000 0.000 rg
+0.000 0.000 0.000 RG
+0.6 w 0 J [  ] 0 d
+BT 64.016 784.469 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 781.769 m 123.656 781.769 l S
+BT 123.656 784.469 Td /F1 12.0 Tf  [(: Both docked trucks have unloaded a shipment.)] TJ ET
+BT 48.816 746.218 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 734.213 Td /F1 12.0 Tf  [(Call )] TJ ET
+BT 87.020 734.213 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 144.620 734.213 Td /F1 12.0 Tf  [( again.)] TJ ET
+57.816 699.062 m 
+57.816 699.612 57.589 700.158 57.201 700.547 c
+56.812 700.936 56.266 701.162 55.716 701.162 c
+55.166 701.162 54.620 700.936 54.231 700.547 c
+53.842 700.158 53.616 699.612 53.616 699.062 c
+53.616 698.512 53.842 697.966 54.231 697.577 c
+54.620 697.189 55.166 696.962 55.716 696.962 c
+56.266 696.962 56.812 697.189 57.201 697.577 c
+57.589 697.966 57.816 698.512 57.816 699.062 c f
+BT 64.016 695.957 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 693.257 m 130.988 693.257 l S
+BT 130.988 695.957 Td /F1 12.0 Tf  [(: Handled above.)] TJ ET
+57.816 684.806 m 
+57.816 685.356 57.589 685.902 57.201 686.291 c
+56.812 686.680 56.266 686.906 55.716 686.906 c
+55.166 686.906 54.620 686.680 54.231 686.291 c
+53.842 685.902 53.616 685.356 53.616 684.806 c
+53.616 684.256 53.842 683.710 54.231 683.321 c
+54.620 682.933 55.166 682.706 55.716 682.706 c
+56.266 682.706 56.812 682.933 57.201 683.321 c
+57.589 683.710 57.816 684.256 57.816 684.806 c f
+BT 64.016 681.701 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 679.001 m 123.656 679.001 l S
+BT 123.656 681.701 Td /F1 12.0 Tf  [(: There is 1 docked truck.)] TJ ET
+57.816 670.550 m 
+57.816 671.100 57.589 671.646 57.201 672.035 c
+56.812 672.424 56.266 672.650 55.716 672.650 c
+55.166 672.650 54.620 672.424 54.231 672.035 c
+53.842 671.646 53.616 671.100 53.616 670.550 c
+53.616 670.000 53.842 669.454 54.231 669.065 c
+54.620 668.677 55.166 668.450 55.716 668.450 c
+56.266 668.450 56.812 668.677 57.201 669.065 c
+57.589 669.454 57.816 670.000 57.816 670.550 c f
+BT 64.016 667.445 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 664.745 m 123.656 664.745 l S
+BT 123.656 667.445 Td /F1 12.0 Tf  [(: Queue has 0 trucks.)] TJ ET
+57.816 656.294 m 
+57.816 656.844 57.589 657.390 57.201 657.779 c
+56.812 658.168 56.266 658.394 55.716 658.394 c
+55.166 658.394 54.620 658.168 54.231 657.779 c
+53.842 657.390 53.616 656.844 53.616 656.294 c
+53.616 655.744 53.842 655.198 54.231 654.809 c
+54.620 654.421 55.166 654.194 55.716 654.194 c
+56.266 654.194 56.812 654.421 57.201 654.809 c
+57.589 655.198 57.816 655.744 57.816 656.294 c f
+BT 64.016 653.189 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 650.489 m 123.656 650.489 l S
+BT 123.656 653.189 Td /F1 12.0 Tf  [(: The docked truck has unloaded a shipment.)] TJ ET
+57.816 642.038 m 
+57.816 642.588 57.589 643.134 57.201 643.523 c
+56.812 643.912 56.266 644.138 55.716 644.138 c
+55.166 644.138 54.620 643.912 54.231 643.523 c
+53.842 643.134 53.616 642.588 53.616 642.038 c
+53.616 641.488 53.842 640.942 54.231 640.553 c
+54.620 640.165 55.166 639.938 55.716 639.938 c
+56.266 639.938 56.812 640.165 57.201 640.553 c
+57.589 640.942 57.816 641.488 57.816 642.038 c f
+BT 64.016 626.933 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 624.233 m 123.656 624.233 l S
+BT 123.656 626.933 Td /F1 12.0 Tf  [(: The previously docked trucks have loaded a shipment each.)] TJ ET
+BT 48.816 588.682 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 576.677 Td /F1 12.0 Tf  [(Call )] TJ ET
+BT 87.020 576.677 Td /F3 12.0 Tf  [(action\(\))] TJ ET
+BT 144.620 576.677 Td /F1 12.0 Tf  [( again.)] TJ ET
+57.816 541.526 m 
+57.816 542.076 57.589 542.622 57.201 543.011 c
+56.812 543.400 56.266 543.626 55.716 543.626 c
+55.166 543.626 54.620 543.400 54.231 543.011 c
+53.842 542.622 53.616 542.076 53.616 541.526 c
+53.616 540.976 53.842 540.430 54.231 540.041 c
+54.620 539.653 55.166 539.426 55.716 539.426 c
+56.266 539.426 56.812 539.653 57.201 540.041 c
+57.589 540.430 57.816 540.976 57.816 541.526 c f
+BT 64.016 538.421 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 535.721 m 130.988 535.721 l S
+BT 130.988 538.421 Td /F1 12.0 Tf  [(: Handled above.)] TJ ET
+57.816 527.270 m 
+57.816 527.820 57.589 528.366 57.201 528.755 c
+56.812 529.144 56.266 529.370 55.716 529.370 c
+55.166 529.370 54.620 529.144 54.231 528.755 c
+53.842 528.366 53.616 527.820 53.616 527.270 c
+53.616 526.720 53.842 526.174 54.231 525.785 c
+54.620 525.397 55.166 525.170 55.716 525.170 c
+56.266 525.170 56.812 525.397 57.201 525.785 c
+57.589 526.174 57.816 526.720 57.816 527.270 c f
+BT 64.016 524.165 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 521.465 m 123.656 521.465 l S
+BT 123.656 524.165 Td /F1 12.0 Tf  [(: There are 0 docked trucks.)] TJ ET
+57.816 513.014 m 
+57.816 513.564 57.589 514.110 57.201 514.499 c
+56.812 514.888 56.266 515.114 55.716 515.114 c
+55.166 515.114 54.620 514.888 54.231 514.499 c
+53.842 514.110 53.616 513.564 53.616 513.014 c
+53.616 512.464 53.842 511.918 54.231 511.529 c
+54.620 511.141 55.166 510.914 55.716 510.914 c
+56.266 510.914 56.812 511.141 57.201 511.529 c
+57.589 511.918 57.816 512.464 57.816 513.014 c f
+BT 64.016 509.909 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 507.209 m 123.656 507.209 l S
+BT 123.656 509.909 Td /F1 12.0 Tf  [(: Queue has 0 trucks.)] TJ ET
+57.816 498.758 m 
+57.816 499.308 57.589 499.854 57.201 500.243 c
+56.812 500.632 56.266 500.858 55.716 500.858 c
+55.166 500.858 54.620 500.632 54.231 500.243 c
+53.842 499.854 53.616 499.308 53.616 498.758 c
+53.616 498.208 53.842 497.662 54.231 497.273 c
+54.620 496.885 55.166 496.658 55.716 496.658 c
+56.266 496.658 56.812 496.885 57.201 497.273 c
+57.589 497.662 57.816 498.208 57.816 498.758 c f
+BT 64.016 495.653 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 492.953 m 123.656 492.953 l S
+BT 123.656 495.653 Td /F1 12.0 Tf  [(: The previously docked truck loaded a shipment.)] TJ ET
+BT 34.016 469.397 Td /F2 12.0 Tf  [(Manifest)] TJ ET
+BT 79.340 469.397 Td /F1 12.0 Tf  [(.)] TJ ET
+BT 34.016 443.141 Td /F1 12.0 Tf  [(To test )] TJ ET
+BT 70.016 443.141 Td /F3 12.0 Tf  [(add\(\))] TJ ET
+BT 106.016 443.141 Td /F1 12.0 Tf  [(:)] TJ ET
+BT 48.816 416.890 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 404.885 Td /F1 12.0 Tf  [(Create a manifest and add a shipment.)] TJ ET
+57.816 369.734 m 
+57.816 370.284 57.589 370.830 57.201 371.219 c
+56.812 371.608 56.266 371.834 55.716 371.834 c
+55.166 371.834 54.620 371.608 54.231 371.219 c
+53.842 370.830 53.616 370.284 53.616 369.734 c
+53.616 369.184 53.842 368.638 54.231 368.249 c
+54.620 367.861 55.166 367.634 55.716 367.634 c
+56.266 367.634 56.812 367.861 57.201 368.249 c
+57.589 368.638 57.816 369.184 57.816 369.734 c f
+BT 64.016 366.629 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 363.929 m 130.988 363.929 l S
+BT 130.988 366.629 Td /F1 12.0 Tf  [(: manifest.size\(\) returns 0)] TJ ET
+57.816 355.478 m 
+57.816 356.028 57.589 356.574 57.201 356.963 c
+56.812 357.352 56.266 357.578 55.716 357.578 c
+55.166 357.578 54.620 357.352 54.231 356.963 c
+53.842 356.574 53.616 356.028 53.616 355.478 c
+53.616 354.928 53.842 354.382 54.231 353.993 c
+54.620 353.605 55.166 353.378 55.716 353.378 c
+56.266 353.378 56.812 353.605 57.201 353.993 c
+57.589 354.382 57.816 354.928 57.816 355.478 c f
+BT 64.016 352.373 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 349.673 m 123.656 349.673 l S
+BT 123.656 352.373 Td /F1 12.0 Tf  [(: manifest.size\(\) returns 1)] TJ ET
+BT 34.016 326.117 Td /F1 12.0 Tf  [(To test )] TJ ET
+BT 70.016 326.117 Td /F3 12.0 Tf  [(nextPickUp\(\))] TJ ET
+BT 156.416 326.117 Td /F1 12.0 Tf  [(:)] TJ ET
+BT 48.816 299.866 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 287.861 Td /F1 12.0 Tf  [(Create a manifest with 3 shipments. Call )] TJ ET
+BT 262.004 287.861 Td /F3 12.0 Tf  [(nextPickUp\(\))] TJ ET
+BT 348.404 287.861 Td /F1 12.0 Tf  [( 3 times.)] TJ ET
+57.816 252.710 m 
+57.816 253.260 57.589 253.806 57.201 254.195 c
+56.812 254.584 56.266 254.810 55.716 254.810 c
+55.166 254.810 54.620 254.584 54.231 254.195 c
+53.842 253.806 53.616 253.260 53.616 252.710 c
+53.616 252.160 53.842 251.614 54.231 251.225 c
+54.620 250.837 55.166 250.610 55.716 250.610 c
+56.266 250.610 56.812 250.837 57.201 251.225 c
+57.589 251.614 57.816 252.160 57.816 252.710 c f
+BT 64.016 249.605 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 246.905 m 130.988 246.905 l S
+BT 130.988 249.605 Td /F1 12.0 Tf  [(: manifest.size\(\) returns 3)] TJ ET
+57.816 238.454 m 
+57.816 239.004 57.589 239.550 57.201 239.939 c
+56.812 240.328 56.266 240.554 55.716 240.554 c
+55.166 240.554 54.620 240.328 54.231 239.939 c
+53.842 239.550 53.616 239.004 53.616 238.454 c
+53.616 237.904 53.842 237.358 54.231 236.969 c
+54.620 236.581 55.166 236.354 55.716 236.354 c
+56.266 236.354 56.812 236.581 57.201 236.969 c
+57.589 237.358 57.816 237.904 57.816 238.454 c f
+BT 64.016 235.349 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 232.649 m 123.656 232.649 l S
+BT 123.656 235.349 Td /F1 12.0 Tf  [(: manifest.size\(\) returns 3)] TJ ET
+57.816 224.198 m 
+57.816 224.748 57.589 225.294 57.201 225.683 c
+56.812 226.072 56.266 226.298 55.716 226.298 c
+55.166 226.298 54.620 226.072 54.231 225.683 c
+53.842 225.294 53.616 224.748 53.616 224.198 c
+53.616 223.648 53.842 223.102 54.231 222.713 c
+54.620 222.325 55.166 222.098 55.716 222.098 c
+56.266 222.098 56.812 222.325 57.201 222.713 c
+57.589 223.102 57.816 223.648 57.816 224.198 c f
+BT 64.016 221.093 Td /F1 12.0 Tf  [(Verify After)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 218.393 m 123.656 218.393 l S
+BT 123.656 221.093 Td /F1 12.0 Tf  [(: manifest.nextPickUp\(\) returns the shipment that was added second)] TJ ET
+BT 34.016 194.837 Td /F1 12.0 Tf  [(To test )] TJ ET
+BT 70.016 194.837 Td /F3 12.0 Tf  [(pickUp\(\))] TJ ET
+BT 127.616 194.837 Td /F1 12.0 Tf  [(:)] TJ ET
+BT 48.816 168.586 Td /F1 12.0 Tf  [(1.)] TJ ET
+BT 64.016 156.581 Td /F1 12.0 Tf  [(Create a manifest with 3 shipments. Call )] TJ ET
+BT 262.004 156.581 Td /F3 12.0 Tf  [(pickUp\(\))] TJ ET
+BT 319.604 156.581 Td /F1 12.0 Tf  [( 3 times.)] TJ ET
+57.816 121.430 m 
+57.816 121.980 57.589 122.526 57.201 122.915 c
+56.812 123.304 56.266 123.530 55.716 123.530 c
+55.166 123.530 54.620 123.304 54.231 122.915 c
+53.842 122.526 53.616 121.980 53.616 121.430 c
+53.616 120.880 53.842 120.334 54.231 119.945 c
+54.620 119.557 55.166 119.330 55.716 119.330 c
+56.266 119.330 56.812 119.557 57.201 119.945 c
+57.589 120.334 57.816 120.880 57.816 121.430 c f
+BT 64.016 118.325 Td /F1 12.0 Tf  [(Verify Before)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 115.625 m 130.988 115.625 l S
+BT 130.988 118.325 Td /F1 12.0 Tf  [(: manifest.size\(\) returns 3)] TJ ET
+57.816 107.174 m 
+57.816 107.724 57.589 108.270 57.201 108.659 c
+56.812 109.048 56.266 109.274 55.716 109.274 c
+55.166 109.274 54.620 109.048 54.231 108.659 c
+53.842 108.270 53.616 107.724 53.616 107.174 c
+53.616 106.624 53.842 106.078 54.231 105.689 c
+54.620 105.301 55.166 105.074 55.716 105.074 c
+56.266 105.074 56.812 105.301 57.201 105.689 c
+57.589 106.078 57.816 106.624 57.816 107.174 c f
+BT 64.016 104.069 Td /F1 12.0 Tf  [(Verify for Each)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 101.369 m 139.316 101.369 l S
+BT 139.316 104.069 Td /F1 12.0 Tf  [(: manifest.size\(\) returns 2, 1, 0)] TJ ET
+57.816 92.918 m 
+57.816 93.468 57.589 94.014 57.201 94.403 c
+56.812 94.792 56.266 95.018 55.716 95.018 c
+55.166 95.018 54.620 94.792 54.231 94.403 c
+53.842 94.014 53.616 93.468 53.616 92.918 c
+53.616 92.368 53.842 91.822 54.231 91.433 c
+54.620 91.045 55.166 90.818 55.716 90.818 c
+56.266 90.818 56.812 91.045 57.201 91.433 c
+57.589 91.822 57.816 92.368 57.816 92.918 c f
+BT 64.016 89.813 Td /F1 12.0 Tf  [(Verify for Each)] TJ ET
+0.6 w 0 J [  ] 0 d
+64.016 87.113 m 139.316 87.113 l S
+BT 139.316 89.813 Td /F1 12.0 Tf  [(: manifest.pickUp\(\) returns the shipment that was added first, second, third)] TJ ET
+endstream
+endobj
+xref
+0 37
+0000000000 65535 f 
+0000000009 00000 n 
+0000000074 00000 n 
+0000000120 00000 n 
+0000000387 00000 n 
+0000000416 00000 n 
+0000000530 00000 n 
+0000000593 00000 n 
+0000006056 00000 n 
+0000006165 00000 n 
+0000006273 00000 n 
+0000006379 00000 n 
+0000006444 00000 n 
+0000012548 00000 n 
+0000012613 00000 n 
+0000020005 00000 n 
+0000020070 00000 n 
+0000025608 00000 n 
+0000025673 00000 n 
+0000031874 00000 n 
+0000031939 00000 n 
+0000037576 00000 n 
+0000037641 00000 n 
+0000045094 00000 n 
+0000045159 00000 n 
+0000065749 00000 n 
+0000065814 00000 n 
+0000073395 00000 n 
+0000073460 00000 n 
+0000081530 00000 n 
+0000081595 00000 n 
+0000093023 00000 n 
+0000093088 00000 n 
+0000104349 00000 n 
+0000104414 00000 n 
+0000118384 00000 n 
+0000118449 00000 n 
+trailer
+<<
+/Size 37
+/Root 1 0 R
+/Info 5 0 R
+>>
+startxref
+130386
+%%EOF
